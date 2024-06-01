@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <title>{{ .Title }}</title>
     <meta name="description" content="{{ .Description }}" />
-    <link href="/css/main.css" rel="stylesheet" />
+    {{ $css := resources.Get "css/main.css" }}
+    {{ if hugo.IsProduction }}
+    {{ $css = $css | resources.Minify }}
+    {{ end }}
+    <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   </head>
   <body class="my-10">
     <main class="container px-4 lg:mx-auto">
