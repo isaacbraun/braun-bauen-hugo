@@ -1,0 +1,7 @@
+{{ if .IsNamedParams }}
+<div class='grid grid-cols-1 sm:grid-cols-{{ if .Get "colNum" }}{{ .Get "colNum" }}{{ else }}2{{ end }}'>
+{{ else }}
+  <div class="grid grid-cols-1 sm:grid-cols-{{ if gt (len .Params) 0 }}{{ .Get 0 }}{{ else }}2{{ end }}">
+{{ end }}
+    {{ .Inner }}
+</div>
