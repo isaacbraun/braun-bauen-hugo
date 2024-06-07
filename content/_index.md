@@ -7,35 +7,39 @@ draft = false
 Braun Bauen is the personal brand of website and software developer, Isaac Braun.
 
 ## Experience
-### Freelance Website Development
-Summer 2020 - Current\
-Working with HTML, CSS, JS, WordPress, and some PHP to design, develop, and maintain multiple freelance website development projects.
-
-### Southern Adventist University – Web Developer
-January 13th, 2020 – May 8th, 2022\
-Using HTML, CSS, JS, and minimal XML to develop, fix, and maintain a large education system’s website.
-
-### Southern Adventist University Engage Ministries - A/V Director
-August 20th, 2018 – May 8th, 2022\
-Set up and run a mobile sound system for worship band.
-
-### Ohio Department of Transportation – Seasonal Help
-July 8th, 2019 – August 16th, 2019\
-Flag for road work, place and remove traffic signs, pick up trash along the roadways, etc.
+### Website Development Manager
+**Southern Adventist University**\
+November 2022 - Present\
+Managing and developing the university's large marketing website. Developed a new curriculum catalog front-end, allowing much better access to key information for faculty and students. Improved the development workflow, increased website accessibility, and managed multiple student website developers.
+### Freelance Website Developer
+**Braun Bauen**\
+June 2020 - Present\
+Developing and maintaining multiple websites and website modules for clients in varying industries. 
+### Student Website Developer
+**Southern Adventist University**\
+January 2020 – May 2022\
+Developed and implemented multiple small features, trained CMS editors, and built virtual tours for the university's marketing website.
+### Student Audio/Visual Director
+**Southern Adventist University Engage Ministries**\
+August 2018 – May 2022\
+Coordinated, set up, and mixed the sound system for a touring worship band.
+### Seasonal Help
+**Ohio Department of Transportation**\
+July 2019 – August 2019\
+Worked alongside road construction crews; flagging, placing and removing traffic signs, and picking up trash along the roadways.
 
 {{< columns 2 >}}
 {{% column-item %}}
 ## Education
 ### B.S. Computer Science
 Southern Adventist University\
-Fall 2018 – Spring 2022\
-GPA: 3.75
+Fall 2018 – Spring 2022
 {{% /column-item %}}
 
 {{% column-item %}}
 ## Certifications
 ### Data Analytics Certificate
 Southern Adventist University\
-Fall 2023 - Current (expected completion Oct. 2024)
+Fall 2023 - Present (expected completion Oct. 2024)
 {{% /column-item %}}
 {{< /columns >}}
