@@ -1,0 +1,12 @@
+<header class="sticky top-10 p-3 rounded-lg border border-gray-200 items-center gap-3 flex flex-row flex-nowrap h-[67px] w-fit mx-auto bg-white shadow-lg shadow-gray-200">
+  <a href="/" title="Braun Bauen Home">
+    {{ with resources.Get "img/BB_Logo_CompactHorz_Color.png" }}
+    <img class="BbLogoCompacthorzColor1" width="247px" height="43px" src="{{ .RelPermalink }}" />
+    {{ end }}
+  </a>
+  <div name="divider" class="w-0 h-full border-l border-gray-200"></div>
+  <nav class="flex flex-row gap-3 h-full">
+    <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-6 flex items-center" title="About Braun Bauen">about</a>
+    <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-6 flex items-center" title="About Braun Bauen">blog</a>
+  </nav>
+</header>
