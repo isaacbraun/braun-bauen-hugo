@@ -3,8 +3,8 @@ The Braun Bauen website built with Hugo.
 
 
 # TODO
-- [*] ~~Look into Hugo compression [Hugo Doc](https://gohugo.io/hugo-pipes/postprocess/)~~
-- [*] ~~Create scripts for tailwind dev and build~~
+- [x] Look into Hugo compression [Hugo Doc](https://gohugo.io/hugo-pipes/postprocess/)
+- [x] Create scripts for tailwind dev and build
 - [ ] Fix header middle spacing
 - [ ] Fix body/main stylings
 - [ ] Give credit for logo/design
