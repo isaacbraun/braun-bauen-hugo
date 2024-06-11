@@ -1,42 +1,49 @@
 ---
-title: "About"
+title: "About Isaac Braun"
+description: "Braun Bauen is the personal brand of website developer, Isaac Braun."
 date: 2024-06-07T22:35:34-04:00
 draft: false
 ---
 
 ## Profile
-I am a highly organized and communicative individual that is passionate about building great user experiences through performant and accessible websites. Working with a small team of website designers and developers has been an absolute pleasure, and I look forward to collaborating with others in the future. I take great pride in my work and feel a great responsibility towards it.
+I am a detail-oriented and communicative creative dedicated to crafting exceptional user experiences through performant and accessible websites.
+Early in my career, I found great fulfillment and motivation working with a small team of designers and developers.
+This experience encouraged me to seek opportunities to collaborate with driven and innovative individuals.
+I am commited to producing quality work and feel a strong responsibility to my collaborators and the final product.
+I thrive on discussing and learning unfamiliar technologies or ideas, so please feel free to reach out!
 
 ## Experience
-### Website Development Manager
-**Southern Adventist University**\
-November 2022 - Present
+{{< resume-item title="Website Development Manager" location="Southern Adventist University" duration="November 2022 - Present" >}}
+{{% markdown %}}
 - Managed and developed the university's ~1500 page marketing website
-- Supported over 150 content editors
-- Managed multiple student developers on a multitude of projects
+- Supported and collaborated with over 150 content editors in varying departments
+- Lead team of student developers through a multitude of projects
 - Developed a new curriculum catalog front-end, allowing much better access to key information for faculty and students
 - Improved the development workflow and increased website accessibility
+{{% /markdown %}}
+{{< /resume-item >}}
 
-### Freelance Website Developer
-**Braun Bauen**\
-June 2020 - Present
-- Developed and maintained multiple websites and website modules for clients in varying industries
+{{< resume-item title="Freelance Website Developer" location="Braun Bauen" duration="June 2020 - Present" >}}
+{{% markdown %}}
+- Developed and maintained multiple websites and website modules for clients in different industries
+{{% /markdown %}}
+{{< /resume-item >}}
 
-### Student Website Developer
-**Southern Adventist University**\
-January 2020 – May 2022
+{{< resume-item title="Student Website Developer" location="Southern Adventist University" duration="January 2020 – May 2022" >}}
+{{% markdown %}}
 - Developed and implemented multiple small features for the university's marketing website
 - Trained CMS editors
 - Built virtual tours from panoramic photos
+{{% /markdown %}}
+{{< /resume-item >}}
 
 ## Education
-### Bachelor of Science in Computer Science
-Southern Adventist University
+{{< resume-item title="Bachelor of Science in Computer Science" location="Southern Adventist University" />}}
 
 ## Certifications
-### Data Analytics Certificate
-Southern Adventist University\
+{{< resume-item title="Data Analytics Certificate" location="Southern Adventist University" >}}
 Expected Completion October 2024
+{{< /resume-item >}}
 
 ## Skills
 Technical: HTML, CSS, JavaScript, XSLT, PHP, Vue.js, React.js, Git, Content Management Systems\
