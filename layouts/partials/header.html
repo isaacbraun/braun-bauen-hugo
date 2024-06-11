@@ -1,13 +1,12 @@
-<header class="sticky top-10 mx-2 pointer-events-none">
-  <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-lg shadow-gray-200 pointer-events-auto">
+<header class="sticky top-5 md:top-10 mt-10 md:mt-20 mx-2 pointer-events-none">
+  <div class="mx-auto flex flow-row flex-nowrap items-center gap-1 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-md shadow-slate-100 pointer-events-auto">
     <a href="/" title="Braun Bauen Home">
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color.png" }}
-      <img class="BbLogoCompacthorzColor1" width="247px" height="43px" src="{{ .RelPermalink }}" />
+      <img width="247px" height="43px" src="{{ .RelPermalink }}" />
       {{ end }}
     </a>
-    <div name="divider" class="w-0 h-full border-l border-gray-200"></div>
-    <nav class="flex flex-row gap-3 h-full">
-      <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-6 flex items-center" title="About Braun Bauen">
+    <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200">
+      <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center" title="About Braun Bauen">
         <span class="sr-only sm:not-sr-only">about</span>
         {{ $ctx := dict
           "vendor" "feather"
@@ -16,7 +15,6 @@
         }}
         {{ partial "icons/icon" $ctx }}
       </a>
-      <!-- <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-6 flex items-center" title="About Braun Bauen">blog</a> -->
     </nav>
   </div>
 </header>
