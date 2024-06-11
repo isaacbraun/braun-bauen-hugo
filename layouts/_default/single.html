@@ -1,4 +1,7 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<section>{{ .Content }}</section>
+<main class="mt-16 md:mt-32 prose prose-h2:mb-3 px-3 mx-auto">
+  <h1 class="mb-1 pb-1 border-b-2 rounded-sm border-green-600">{{ .Title }}</h1>
+  <p class="mt-0 text-gray-500">{{ .Description }}</p>
+  <section class="">{{ .Content }}</section>
+</main>
 {{ end }}
