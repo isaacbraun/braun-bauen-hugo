@@ -5,9 +5,13 @@ The Braun Bauen website built with Hugo.
 # TODO
 - [x] Look into Hugo compression [Hugo Doc](https://gohugo.io/hugo-pipes/postprocess/)
 - [x] Create scripts for tailwind dev and build
-- [ ] Fix header middle spacing
-- [ ] Fix body/main stylings
+- [x] Fix header middle spacing
+- [x] Fix body/main stylings
 - [ ] Give credit for logo/design
-- [ ] Change profile to "has increased my enjoyment and passion for my work" "very enjoyable/rewarding" or something
-- [ ] "Lead student developer team" - "Collaborated with mutliple departments..."
+- [x] Change profile to "has increased my enjoyment and passion for my work" "very enjoyable/rewarding" or something
+- [x] "Lead student developer team" - "Collaborated with mutliple departments..."
+- [ ] Create experience/education shortcode
+- [ ] Link Socials / Github / Contact
+- [ ] Change nav colors to fulfill contrast ratio
+- [ ] Look into [CC License](https://creativecommons.org/)
 - [ ] Look into brotli
