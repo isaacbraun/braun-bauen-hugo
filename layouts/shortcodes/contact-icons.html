@@ -1,0 +1,18 @@
+<section class="flex flex-row gap-3 text-gray-500" x-data>
+  <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/isaac-braun-656998235" class="text-current">
+    <span class="sr-only">LinkedIn</span>
+    {{ $ctx := dict
+      "vendor" "feather"
+      "name" "linkedin"
+    }}
+    {{ partial "icons/icon" $ctx }}
+  </a>
+  <button title="Copy Email" @click="$clipboard('isaac@braunbauen.com')" class="text-current">
+    <span class="sr-only">LinkedIn</span>
+    {{ $ctx := dict
+      "vendor" "feather"
+      "name" "mail"
+    }}
+    {{ partial "icons/icon" $ctx }}
+  </button>
+</section>

@@ -10,7 +10,8 @@ I am a detail-oriented and communicative creative dedicated to crafting exceptio
 Early in my career, I found great fulfillment and motivation working with a small team of designers and developers.
 This experience encouraged me to seek opportunities to collaborate with driven and innovative individuals.
 I am commited to producing quality work and feel a strong responsibility to my collaborators and the final product.
-I thrive on discussing and learning unfamiliar technologies or ideas, so please feel free to reach out!
+I love discussing and learning unfamiliar technologies or ideas, so please feel free to reach out!
+{{< contact-icons >}}
 
 ## Experience
 {{< resume-item title="Website Development Manager" location="Southern Adventist University" duration="November 2022 - Present" >}}
@@ -39,11 +40,7 @@ I thrive on discussing and learning unfamiliar technologies or ideas, so please 
 
 ## Education
 {{< resume-item title="Bachelor of Science in Computer Science" location="Southern Adventist University" />}}
-
-## Certifications
-{{< resume-item title="Data Analytics Certificate" location="Southern Adventist University" >}}
-Expected Completion October 2024
-{{< /resume-item >}}
+{{< resume-item title="Data Analytics Certificate" location="Southern Adventist University" duration="Expected October 2024" />}}
 
 ## Skills
 Technical: HTML, CSS, JavaScript, XSLT, PHP, Vue.js, React.js, Git, Content Management Systems\
