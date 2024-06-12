@@ -9,7 +9,8 @@ The Braun Bauen website built with Hugo.
 - [ ] Give credit for logo/design
 - [x] Change profile to "has increased my enjoyment and passion for my work" "very enjoyable/rewarding" or something
 - [x] "Lead student developer team" - "Collaborated with mutliple departments..."
-- [ ] Create experience/education shortcode
+- [x] Create experience/education shortcode
+- [ ] Resume-item mobile refine
 - [ ] Link Socials / Github / Contact
 - [ ] Change nav colors to fulfill contrast ratio
 - [ ] Look into [CC License](https://creativecommons.org/)
