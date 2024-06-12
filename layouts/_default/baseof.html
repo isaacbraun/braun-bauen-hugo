@@ -15,6 +15,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
+  {{ $js := resources.Get "js/main.js" }}
+  {{ if hugo.IsProduction }}
+  {{ $js = $js | resources.Minify }}
+  {{ end }}
+  <script src="{{ $js.RelPermalink }}" defer type="module"></script>
 </head>
 
 <body>
