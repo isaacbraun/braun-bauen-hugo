@@ -1,7 +1,6 @@
 # Braun Bauen - Hugo
 The Braun Bauen website built with Hugo.
 
-
 # TODO
 - [x] Look into Hugo compression [Hugo Doc](https://gohugo.io/hugo-pipes/postprocess/)
 - [x] Create scripts for tailwind dev and build
