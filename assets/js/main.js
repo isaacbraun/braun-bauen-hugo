@@ -1,13 +1,18 @@
 import Alpine from '/js/alpinejs.min.js'
 
 Alpine.magic('clipboard', (el) => {
-  el.classList.add('copied');
+  const spanElem = el.querySelector('span');
+  spanElem.dataset.message = spanElem.innerText;
+  spanElem.innerText = 'Copied!';
   return message => navigator.clipboard.writeText(message);
-})
+});
 
 Alpine.magic('tooltipReset', (el) => {
-  return message => el.innerText = message;
-})
+  const spanElem = el.querySelector('span');
+  console.warn(spanElem, spanElem.dataset.message);
+  spanElem.innerText = spanElem.dataset.message;
+  return null;
+});
  
 window.Alpine = Alpine;
 window.Alpine.start();
