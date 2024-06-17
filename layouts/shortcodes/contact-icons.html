@@ -7,13 +7,29 @@
     }}
     {{ partial "icons/icon" $ctx }}
   </a>
-  <button @click="$clipboard('isaac@braunbauen.com')" class="text-current has-tooltip">
-    <span class="sr-only">Copy Email</span>
-    <span class="tooltip">Copy Email</span>
+  <button x-data="{ message: 'Copy Email' }" @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');" @mouseleave="message = 'Copy Email'" class="text-current has-tooltip">
+    <!-- TODO: check how screen reader understands the tooltip span - <span class="sr-only">Copy Email</span> -->
+    <span class="tooltip" x-text="message"></span>
     {{ $ctx := dict
       "vendor" "feather"
       "name" "mail"
     }}
     {{ partial "icons/icon" $ctx }}
   </button>
+  <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun" class="text-current">
+    <span class="sr-only">GitHub</span>
+    {{ $ctx := dict
+      "vendor" "feather"
+      "name" "github"
+    }}
+    {{ partial "icons/icon" $ctx }}
+  </a>
+  <a aria-label="X - Formerly Twitter" target="_blank" href="https://x.com/isaacbraun1" class="text-current">
+    <span class="sr-only">X - Formerly Twitter</span>
+    {{ $ctx := dict
+      "vendor" "feather"
+      "name" "x"
+    }}
+    {{ partial "icons/icon" $ctx }}
+  </a>
 </section>
