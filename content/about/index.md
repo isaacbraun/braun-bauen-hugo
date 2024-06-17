@@ -19,6 +19,7 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 - Managed and developed the university's ~1500 page marketing website
 - Supported and collaborated with over 150 content editors in varying departments
 - Lead team of student developers through a multitude of projects
+- Acted as liason to the IT Department for the website server and office hardware
 - Developed a new curriculum catalog front-end, allowing much better access to key information for faculty and students
 - Improved the development workflow and increased website accessibility
 {{% /markdown %}}
