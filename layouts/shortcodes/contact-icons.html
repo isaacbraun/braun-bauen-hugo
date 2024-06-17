@@ -7,9 +7,9 @@
     }}
     {{ partial "icons/icon" $ctx }}
   </a>
-  <button title="Copy Email" @click="$clipboard('isaac@braunbauen.com')" class="text-current has-tooltip">
+  <button @click="$clipboard('isaac@braunbauen.com')" class="text-current has-tooltip">
     <span class="sr-only">Copy Email</span>
-    <span class="tooltip rounded shadow-lg bg-gray-100 text-slate-600 text-sm">Copy Email</span>
+    <span class="tooltip">Copy Email</span>
     {{ $ctx := dict
       "vendor" "feather"
       "name" "mail"

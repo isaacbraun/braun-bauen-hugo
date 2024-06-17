@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .tooltip {
-  @apply invisible opacity-0 absolute transition-opacity duration-300 ease-in-out;
+  @apply invisible opacity-0 absolute bottom-[125%] -translate-x-16 w-32 transition-opacity duration-300 ease-in-out bg-gray-200 text-slate-600 rounded text-sm shadow-lg p-0.5;
 }
 
 .tooltip::after {
-  @apply absolute left-[50%] -bottom-1 -ml-1 border-4 border-transparent border-t-gray-100 content-[''];
+  @apply absolute left-[50%] top-full -ml-1 border-8 border-transparent border-t-gray-200 content-[''];
+}
+
+.has-tooltip {
+  @apply relative;
 }
 
 .has-tooltip:hover .tooltip {
