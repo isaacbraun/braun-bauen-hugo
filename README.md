@@ -11,7 +11,7 @@ The Braun Bauen website built with Hugo.
 - [x] "Lead student developer team" - "Collaborated with mutliple departments..."
 - [x] Create experience/education shortcode
 - [ ] Resume-item mobile refine
-- [ ] Link Socials / Github / Contact
+- [x] Link Socials / Github / Contact
 - [ ] Change nav colors to fulfill contrast ratio
 - [ ] Look into [CC License](https://creativecommons.org/)
 - [ ] Look into brotli

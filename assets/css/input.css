@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .tooltip {
-  @apply invisible opacity-0 absolute bottom-[140%] -translate-x-12 w-24 transition-opacity duration-400 ease-in-out bg-gray-300 text-gray-700 rounded text-sm shadow-lg p-0.5;
+  @apply invisible opacity-0 absolute bottom-[140%] -translate-x-12 w-24 transition-opacity duration-500 ease-in-out bg-gray-300 text-gray-700 rounded text-sm shadow-lg p-0.5;
 }
 
 .tooltip::after {
@@ -15,5 +15,9 @@
 }
 
 .has-tooltip:hover .tooltip {
-  @apply visible opacity-100 z-50; 
+  @apply visible opacity-100 z-50;
+}
+
+.shrink {
+  scale: 1.2;
 }
