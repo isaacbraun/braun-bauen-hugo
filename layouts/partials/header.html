@@ -1,4 +1,4 @@
-<header class="sticky top-5 md:top-10 mt-10 md:mt-20 mx-2 pointer-events-none">
+<header class="sticky top-5 md:top-10 mx-2 pointer-events-none" x-data="{ shrink: false }" :class="shrink && 'shrink'" @scroll.window.throttle="null">
   <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-lg shadow-slate-200 pointer-events-auto">
     <a href="/" title="Braun Bauen Home">
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
@@ -10,13 +10,7 @@
     </a>
     <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200">
       <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center" title="About Braun Bauen">
-        <span class="sr-only sm:not-sr-only">about</span>
-        {{ $ctx := dict
-          "vendor" "feather"
-          "name" "info"
-          "className" "sm:hidden"
-        }}
-        {{ partial "icons/icon" $ctx }}
+        <span>about</span>
       </a>
     </nav>
   </div>
