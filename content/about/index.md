@@ -11,6 +11,7 @@ Early in my career, I found great fulfillment and motivation working with a smal
 This experience encouraged me to seek opportunities to collaborate with driven and innovative individuals.
 I am commited to producing quality work and feel a strong responsibility to my collaborators and the final product.
 I love discussing and learning unfamiliar technologies or ideas, so please feel free to reach out!
+
 {{< contact-icons >}}
 
 ## Experience
@@ -44,5 +45,5 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 {{< resume-item title="Data Analytics Certificate" location="Southern Adventist University" duration="Expected October 2024" />}}
 
 ## Skills
-Technical: HTML, CSS, JavaScript, XSLT, PHP, Vue.js, React.js, Git, Content Management Systems\
-Interests: Choral Performance, Piano, Woodworking, Photography
+**Technical:** HTML, CSS, JavaScript, XSLT, PHP, Vue.js, React.js, Git, Content Management Systems\
+**Interests:** Choral Performance, Piano, Woodworking, Photography
