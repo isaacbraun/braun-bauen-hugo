@@ -3,7 +3,7 @@
 {{ $github := dict "vendor" "feather" "name" "github" }}
 {{ $twitter := dict "vendor" "feather" "name" "x" }} 
 
-<section class="flex flex-row gap-3 text-gray-500">
+<section class="print:hidden flex flex-row gap-3 text-gray-500">
   <button x-data="{ message: 'Copy Email' }"
     @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');"
     @mouseleave="message = 'Copy Email'"
