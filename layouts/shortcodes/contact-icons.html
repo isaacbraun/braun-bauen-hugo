@@ -1,35 +1,31 @@
+{{ $linkedIn := dict "vendor" "feather" "name" "linkedin" }}
+{{ $mail := dict "vendor" "feather" "name" "mail" }}
+{{ $github := dict "vendor" "feather" "name" "github" }}
+{{ $twitter := dict "vendor" "feather" "name" "x" }} 
+
 <section class="flex flex-row gap-3 text-gray-500">
-  <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/isaac-braun-656998235" class="text-current">
-    <span class="sr-only">LinkedIn</span>
-    {{ $ctx := dict
-      "vendor" "feather"
-      "name" "linkedin"
-    }}
-    {{ partial "icons/icon" $ctx }}
-  </a>
-  <button x-data="{ message: 'Copy Email' }" @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');" @mouseleave="message = 'Copy Email'" class="text-current has-tooltip">
+  <button x-data="{ message: 'Copy Email' }"
+    @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');"
+    @mouseleave="message = 'Copy Email'"
+    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out has-tooltip"
+    aria-label="Copy Email to Clipboard">
     <!-- TODO: check how screen reader understands the tooltip span - <span class="sr-only">Copy Email</span> -->
     <span class="tooltip" x-text="message"></span>
-    {{ $ctx := dict
-      "vendor" "feather"
-      "name" "mail"
-    }}
-    {{ partial "icons/icon" $ctx }}
+    {{ partial "icons/icon" $mail }}
   </button>
-  <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun" class="text-current">
+  <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun"
+    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out">
     <span class="sr-only">GitHub</span>
-    {{ $ctx := dict
-      "vendor" "feather"
-      "name" "github"
-    }}
-    {{ partial "icons/icon" $ctx }}
+    {{ partial "icons/icon" $github }}
   </a>
-  <a aria-label="X - Formerly Twitter" target="_blank" href="https://x.com/isaacbraun1" class="text-current">
+  <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/isaac-braun-656998235"
+    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out">
+    <span class="sr-only">LinkedIn</span>
+    {{ partial "icons/icon" $linkedIn }}
+  </a>
+  <a aria-label="X - Formerly Twitter" target="_blank" href="https://x.com/isaacbraun1"
+    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out">
     <span class="sr-only">X - Formerly Twitter</span>
-    {{ $ctx := dict
-      "vendor" "feather"
-      "name" "x"
-    }}
-    {{ partial "icons/icon" $ctx }}
+    {{ partial "icons/icon" $twitter }}
   </a>
 </section>
