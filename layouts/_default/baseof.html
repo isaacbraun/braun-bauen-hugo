@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>{{ .Title }}</title>
+  <title>{{ .Title }} | Braun Bauen</title>
   <meta name="description" content="{{ .Description }}" />
   {{ $css := resources.Get "css/main.css" }}
   {{ if hugo.IsProduction }}
@@ -22,7 +22,7 @@
   <script src="{{ $js.RelPermalink }}" defer type="module"></script>
 </head>
 
-<body>
+  <body>
   {{ partial "partials/header.html" }}
   {{ block "main" . }}{{ end }}
   {{ partial "partials/footer.html" }}

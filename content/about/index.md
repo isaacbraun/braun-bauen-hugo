@@ -1,4 +1,5 @@
 ---
+layout: resume
 title: "About Isaac Braun"
 description: "Braun Bauen is the personal brand of website developer, Isaac Braun."
 date: 2024-06-07T22:35:34-04:00
@@ -15,6 +16,7 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 {{< contact-icons >}}
 
 ## Experience
+
 {{< resume-item title="Website Development Manager" location="Southern Adventist University" duration="November 2022 - Present" >}}
 {{% markdown %}}
 - Managed and developed the university's ~1500 page marketing website
@@ -41,9 +43,12 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 {{< /resume-item >}}
 
 ## Education
+
 {{< resume-item title="Bachelor of Science in Computer Science" location="Southern Adventist University" />}}
+
 {{< resume-item title="Data Analytics Certificate" location="Southern Adventist University" duration="Expected October 2024" />}}
 
 ## Skills
+
 **Technical:** HTML, CSS, JavaScript, XSLT, PHP, Vue.js, React.js, Git, Content Management Systems\
 **Interests:** Choral Performance, Piano, Woodworking, Photography
