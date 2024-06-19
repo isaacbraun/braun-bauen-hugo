@@ -1,9 +1,23 @@
-<footer class="print:hidden bg-green-200 h-24 mt-20 py-4 px-2 flex flex-row justify-between items-center text-gray-700">
-  {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
-  <img class="h-[43px]" width="247px" height="43px" src="{{ .RelPermalink }}" />
-  {{ end }}
-  <section class="flex flex-col text-right">
-    <p>isaac@braunbauen.com</p>
-    <p>Logo and Branding by NNIEVES DESIGN AND DEVELOPMENT</p>
+<footer
+  class="print:hidden bg-green-200 mt-20 py-12 px-6 flex flex-row flex-wrap justify-between items-center gap-4 md:gap-10 text-gray-900">
+  <section class="w-full flex flex-col md:flex-row gap-4 justify-between md:items-end">
+    <a href="/" aria-title="Braun Bauen Home">
+      {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
+      <img width="245px" height="35.44px" src="{{ .RelPermalink }}" />
+      {{ end }}
+    </a>
+    <a href="mailto:isaac@braunbauen.com"
+      class="text-lg hover:text-green-600 transition-colors duration-300 ease-in-out">
+      isaac@braunbauen.com
+    </a>
+  </section>
+  <section class="w-full flex flex-col-reverse md:flex-row gap-4 justify-between text-sm">
+    <p>braun bauen 2024, by isaac braun</p>
+    <p>
+      logo and branding by
+      <a href="https://www.nnieves.com" class="hover:text-green-600 transition-colors duration-300 ease-in-out">
+        NNIEVES DESIGN & DEVELOPMENT
+      </a>
+    </p>
   </section>
 </footer>
