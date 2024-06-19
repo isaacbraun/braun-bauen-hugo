@@ -10,8 +10,10 @@ The Braun Bauen website built with Hugo.
 - [x] Change profile to "has increased my enjoyment and passion for my work" "very enjoyable/rewarding" or something
 - [x] "Lead student developer team" - "Collaborated with mutliple departments..."
 - [x] Create experience/education shortcode
-- [ ] Resume-item mobile refine
+- [x] Resume-item mobile refine
 - [x] Link Socials / Github / Contact
+- [x] Print styles for resume page
+- [ ] Add favicon
 - [ ] Change nav colors to fulfill contrast ratio
 - [ ] Look into [CC License](https://creativecommons.org/)
 - [ ] Look into brotli
