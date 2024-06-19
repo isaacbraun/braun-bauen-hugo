@@ -1,6 +1,6 @@
 <header class="print:hidden sticky top-5 md:top-10 mx-2 pointer-events-none" x-data="{ shrink: false }" :class="shrink && 'shrink'" @scroll.window.throttle="null">
   <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-lg shadow-slate-200 pointer-events-auto">
-    <a href="/" title="Braun Bauen Home">
+    <a href="/" aria-title="Braun Bauen Home">
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
       <img class="hidden sm:block" width="247px" height="43px" src="{{ .RelPermalink }}" />
       {{ end }}
@@ -9,7 +9,7 @@
       {{ end }}
     </a>
     <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200">
-      <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center" title="About Braun Bauen">
+      <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center shadow-sm hover:shadow-md transition-shadow duration-300 ease-in-out" title="About Braun Bauen">
         <span>about</span>
       </a>
     </nav>
