@@ -8,7 +8,7 @@ run:
 
 build:
 	@echo "Bulding for Production"
-	@hugo --minify
+	@hugo --gc --minify
 
 server:
 	@echo "Running Hugo Server"
