@@ -1,7 +1,7 @@
 {{ $linkedIn := dict "vendor" "feather" "name" "linkedin" }}
 {{ $mail := dict "vendor" "feather" "name" "mail" }}
 {{ $github := dict "vendor" "feather" "name" "github" }}
-{{ $twitter := dict "vendor" "feather" "name" "x" }} 
+{{ $twitter := dict "vendor" "feather" "name" "twitter" }} 
 
 <section class="print:hidden flex flex-row gap-3 text-gray-500">
   <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun"
@@ -15,7 +15,7 @@
     class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out has-tooltip"
     aria-label="Copy Email to Clipboard">
     <!-- TODO: check how screen reader understands the tooltip span - <span class="sr-only">Copy Email</span> -->
-    <span class="tooltip" x-text="message"></span>
+    <span class="tooltip" x-text="message" :class="message == 'Copied!' && 'clicked'"></span>
     {{ partial "icons/icon" $mail }}
   </button>
   <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/isaac-braun-656998235"
