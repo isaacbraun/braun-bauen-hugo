@@ -12,11 +12,17 @@ The Braun Bauen website built with Hugo.
 - [x] Resume-item mobile refine
 - [x] Link Socials / Github / Contact
 - [x] Print styles for resume page
-- [ ] N: button hovers
-- [ ] N: logo text align
-- [ ] N: hash / hash h1 wrap
-- [ ] N: give credit for logo/design
-- [ ] N: add favicon
-- [ ] Change nav colors to fulfill contrast ratio
-- [ ] Look into [CC License](https://creativecommons.org/)
-- [ ] Look into brotli
+- [x] N: button hovers - outline, bg transparent, darker green white text.
+- [x] N: logo text align
+- [x] N: hash / hash h1 wrap - remove on mobile
+- [x] print: move web dev up, "portfolio at ..."
+- [x] Header shadow
+- [x] x logo to twitter
+- [x] durations lighter gray
+- [x] N: add favicon - scale down
+- [ ] N: Change nav colors to fulfill contrast ratio
+- [x] Footer: one/two lines if using alt logo, make icon not draggable, fix text highlight
+- [x] Email: tooltip green bg on copy, add copy icon next to email in footer
+- [ ] Fix lighthouse errors
+- [ ] Test out print styles, should it be forced to one page or two?
+- [ ] After domain set, change root links to domain
