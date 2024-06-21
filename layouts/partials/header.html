@@ -1,15 +1,24 @@
-<header class="print:hidden sticky top-5 md:top-10 mx-2 pointer-events-none transition-transform duration-200 ease-in-out" x-data="{ scroll: false }" :class="scroll && 'scale-90'" @scroll.window="scroll = window.pageYOffset > 50">
-  <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-lg shadow-slate-200 pointer-events-auto">
-    <a href="/" aria-title="Braun Bauen Home">
+<header class="print:hidden sticky top-5 md:top-10 mx-2 pointer-events-none transition-transform duration-200 ease-in-out selection:bg-green-600 selection:text-white" x-data="{ scroll: false }" :class="scroll && 'scale-90'" @scroll.window="scroll = window.pageYOffset > 50">
+  <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-smooth40 pointer-events-auto">
+    <a href="/" aria-label="Braun Bauen Home">
+      {{ $resize := images.Process "webp q100 resize 247x36" }}
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
-      <img class="hidden sm:block" width="247px" height="43px" src="{{ .RelPermalink }}" />
+        {{ with .Filter $resize }}
+          <img class="hidden sm:block" alt="Braun Bauen Logo" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+        {{ end }}
       {{ end }}
+      {{ $resizeMark := images.Process "webp q100 resize 41x39" }}
       {{ with resources.Get "img/BB_Logo_Mark_Color_NoPadding.png" }}
-      <img class="sm:hidden" width="41px" height="39px" src="{{ .RelPermalink }}" />
+        {{ with .Filter $resizeMark }}
+          <img class="sm:hidden" alt="Braun Bauen Logo Mark" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+        {{ end }}
       {{ end }}
     </a>
     <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200">
-      <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center shadow-sm hover:shadow-md transition-shadow duration-300 ease-in-out" title="About Braun Bauen">
+      <!-- <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out" title="About Braun Bauen"> -->
+      <!--   <span>about</span> -->
+      <!-- </a> -->
+      <a href="/about" class="font-mono text-green-600 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center border border-green-200 hover:bg-transparent hover:border-green-600 transition-colors duration-300 ease-in-out" title="About Braun Bauen">
         <span>about</span>
       </a>
     </nav>
