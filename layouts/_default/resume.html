@@ -1,16 +1,16 @@
 {{ define "main" }}
 <main
-  class="mt-16 md:mt-32 print:mt-2 text-balance prose prose-h2:mb-3 prose-h2:text-gray-400 prose-h3:text-lg px-3 mx-auto max-w-[80ch] print:max-w-none print:prose-h2:mb-1">
+  class="selection:bg-green-200 mt-16 md:mt-32 text-balance prose prose-h2:mb-3 prose-h2:text-gray-500 prose-h3:text-lg px-3 mx-auto max-w-[80ch] print:max-w-none print:m-0 print:p-0 print:prose-sm print:prose-headings:mt-3 print:prose-headings:mb-1 print:prose-p:m-0">
   <h1 class="mb-0 flex flex-row flex-nowrap gap-0.5">
     {{ with resources.Get "img/BB_Logo_Mark_Color_NoPadding.png" }}
-    <img class="hidden print:block m-0 mr-2 h-9" width="38px" height="36px" src="{{ .RelPermalink }}" />
+    <img class="hidden print:block m-0 print:my-0 mr-2 h-9" width="38px" height="36px" src="{{ .RelPermalink }}" />
     {{ end }}
     {{ $hash := dict "vendor" "feather" "name" "hash"
-    "className" "text-green-600 print:hidden" }}
+    "className" "text-green-600 hidden sm:block print:hidden" }}
     {{ partial "icons/icon" $hash }}
     <span class="print:hidden">{{ .Title }}</span>
-    <span class="hidden print:block">Isaac Braun</span>
-    <button onclick="print()" aria-title="Print Resume" class="hidden sm:block px-2 py-1 bg-green-200 text-green-600 rounded ml-auto shadow-sm hover:shadow-md transition-shadow duration-300 ease-in-out print:hidden">
+    <span class="hidden print:flex items-center">Isaac Braun<span class="font-light">&nbsp;| Website Developer</span></span>
+    <button onclick="print()" aria-label="Print Resume" class="hidden sm:block px-2 py-1 bg-green-200 text-green-600 rounded ml-auto shadow-sm border border-green-200 hover:bg-transparent hover:border-green-600 transition-colors duration-300 ease-in-out print:hidden">
       <span class="sr-only">Print Resume</span>
       {{ $print := dict "vendor" "feather" "name" "printer"
       "className" "h-5" }}
@@ -19,7 +19,7 @@
   </h1>
   <p class="mt-2 pb-2 pl-1 print:pl-0 text-gray-500 border-b-2 rounded-sm border-green-600">
     <span class="print:hidden">{{ .Description }}</span>
-    <span class="hidden print:block">Website Developer | isaac@braunbauen.com</span>
+    <span class="hidden print:block">isaac@braunbauen.com | Portfolio at braunbauen.com</span>
   </p>
   <section>{{ .Content }}</section>
 </main>
