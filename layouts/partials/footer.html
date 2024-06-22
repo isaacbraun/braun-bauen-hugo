@@ -1,23 +1,28 @@
-<footer
-  class="print:hidden bg-green-200 mt-20 py-12 px-6 flex flex-row flex-wrap justify-between items-center gap-4 md:gap-10 text-gray-900">
-  <section class="w-full flex flex-col md:flex-row gap-4 justify-between md:items-end">
-    <a href="/" aria-title="Braun Bauen Home">
-      {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
-      <img width="245px" height="35.44px" src="{{ .RelPermalink }}" />
+<footer class="print:hidden selection:bg-green-600 selection:text-white bg-green-200 mt-20 py-9 px-3 text-gray-900">
+  <section class="w-full max-w-screen-lg mx-auto flex flex-col sm:flex-row justify-between gap-4">
+    <a href="/" class="pointer-events-none">
+      <span class="sr-only">Braun Bauen Home</span>
+      {{ with resources.Get "img/BB_Logo_Stack_Horz_Color.png" }}
+      <img aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
       {{ end }}
     </a>
-    <a href="mailto:isaac@braunbauen.com"
-      class="text-lg hover:text-green-600 transition-colors duration-300 ease-in-out">
-      isaac@braunbauen.com
-    </a>
-  </section>
-  <section class="w-full flex flex-col-reverse md:flex-row gap-4 justify-between text-sm">
-    <p>braun bauen 2024, by isaac braun</p>
-    <p>
-      logo and branding by
-      <a href="https://www.nnieves.com" class="hover:text-green-600 transition-colors duration-300 ease-in-out">
-        NNIEVES DESIGN & DEVELOPMENT
-      </a>
-    </p>
+    <section class="flex flex-col justify-end sm:items-end gap-3">
+      <div class="flex sm:flex-row-reverse items-center gap-2">
+        <a href="mailto:isaac@braunbauen.com" class="hover:text-green-600 transition-colors duration-300 ease-in-out">
+          isaac@braunbauen.com
+        </a>
+        <button x-data="{ message: 'Copy Email' }"
+          @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');"
+          @mouseleave="message = 'Copy Email'"
+          class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out has-tooltip"
+          aria-label="Copy Email to Clipboard">
+          <!-- TODO: check how screen reader understands the tooltip span - <span class="sr-only">Copy Email</span> -->
+          <span class="tooltip" x-text="message" :class="message == 'Copied!' && 'clicked'"></span>
+          {{ $copy := dict "vendor" "feather" "name" "copy" }} {{ partial
+          "icons/icon" $copy }}
+        </button>
+      </div>
+      <p>braun bauen 2024, by isaac braun</p>
+    </section>
   </section>
 </footer>
