@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: "About Isaac Braun"
-description: "braun bauen is the personal brand of website developer, isaac braun."
+description: "Braun Bauen is the personal brand of website developer, Isaac Braun."
 date: 2024-06-07T22:35:34-04:00
 draft: false
 ---
