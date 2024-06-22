@@ -1,7 +1,7 @@
 {{ define "main" }} {{ $hash := dict "vendor" "feather" "name" "hash"
-"className" "text-green-600" }}
+"className" "text-green-600 hidden sm:block" }}
 <main
-  class="mt-16 md:mt-32 print:mt-2 text-balance prose prose-h2:mb-3 prose-h2:text-gray-400 selection:bg-green-200 prose-h3:text-lg
+  class="selection:bg-green-200 mt-16 md:mt-32 print:mt-2 text-balance prose prose-h2:mb-3 prose-h2:text-gray-400 prose-h3:text-lg
   px-3 mx-auto print:max-w-none print:prose-h2:mb-1">
   <h1 class="mb-0 flex flex-row flex-nowrap gap-0.5 text-balance">
     {{ partial "icons/icon" $hash }}
