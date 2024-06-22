@@ -21,6 +21,7 @@ module.exports = {
       green: {
         200: "#edf8f3",
         600: "#009f4f",
+        700: "#078244",
       },
     },
     extend: {
