@@ -1390,14 +1390,9 @@ video {
   color: rgb(0 159 79 / var(--tw-text-opacity));
 }
 
-.text-gray-700 {
+.text-green-700 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(7 130 68 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -1415,12 +1410,6 @@ video {
 .shadow-smooth40 {
   --tw-shadow: 0px 1.1px 1.1px rgba(0, 0, 0, 0.014), 0px 2.7px 2.7px rgba(0, 0, 0, 0.02), 0px 5px 5px rgba(0, 0, 0, 0.025), 0px 8.9px 8.9px rgba(0, 0, 0, 0.03), 0px 16.7px 16.7px rgba(0, 0, 0, 0.036), 0px 40px 40px rgba(0, 0, 0, 0.05);
   --tw-shadow-colored: 0px 1.1px 1.1px var(--tw-shadow-color), 0px 2.7px 2.7px var(--tw-shadow-color), 0px 5px 5px var(--tw-shadow-color), 0px 8.9px 8.9px var(--tw-shadow-color), 0px 16.7px 16.7px var(--tw-shadow-color), 0px 40px 40px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-smooth20 {
-  --tw-shadow: 0px 0.6px 0.8px rgba(0, 0, 0, 0.014), 0px 1.3px 2px rgba(0, 0, 0, 0.02), 0px 2.5px 3.8px rgba(0, 0, 0, 0.025), 0px 4.5px 6.7px rgba(0, 0, 0, 0.03), 0px 8.4px 12.5px rgba(0, 0, 0, 0.036), 0px 20px 30px rgba(0, 0, 0, 0.05);
-  --tw-shadow-colored: 0px 0.6px 0.8px var(--tw-shadow-color), 0px 1.3px 2px var(--tw-shadow-color), 0px 2.5px 3.8px var(--tw-shadow-color), 0px 4.5px 6.7px var(--tw-shadow-color), 0px 8.4px 12.5px var(--tw-shadow-color), 0px 20px 30px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1947,10 +1936,6 @@ video {
     margin-top: 0.5rem;
   }
 
-  .print\:mt-0 {
-    margin-top: 0px;
-  }
-
   .print\:block {
     display: block;
   }
@@ -1979,31 +1964,12 @@ video {
     padding-top: 0px;
   }
 
-  .print\:prose-headings\:my-1 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .print\:prose-headings\:my-2 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
   .print\:prose-headings\:mb-1 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     margin-bottom: 0.25rem;
   }
 
-  .print\:prose-headings\:mt-2 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-    margin-top: 0.5rem;
-  }
-
   .print\:prose-headings\:mt-3 :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     margin-top: 0.75rem;
-  }
-
-  .print\:prose-h2\:my-1 :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
   }
 
   .print\:prose-h2\:mb-1 :is(:where(h2):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2012,15 +1978,5 @@ video {
 
   .print\:prose-p\:m-0 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     margin: 0px;
-  }
-
-  .print\:prose-p\:my-0 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .print\:prose-p\:my-1 :is(:where(p):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
   }
 }
