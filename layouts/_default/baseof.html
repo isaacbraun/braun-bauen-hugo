@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }} | Braun Bauen</title>
   <meta name="description" content="{{ .Description }}" />
+  {{ with resources.Get "img/BB_Logo_Mark_64.ico" }}
+    <link rel="icon" type="image/x-icon" href="{{ .RelPermalink }}">
+  {{ end }}
   {{ $css := resources.Get "css/main.css" }}
   {{ if hugo.IsProduction }}
   {{ $css = $css | resources.Minify }}
@@ -23,7 +26,7 @@
   <script src="{{ $js.RelPermalink }}" defer type="module"></script>
 </head>
 
-<body class="selection:bg-green-200">
+<body>
   {{ partial "partials/header.html" }}
   {{ block "main" . }}{{ end }}
   {{ partial "partials/footer.html" }}
