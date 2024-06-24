@@ -20,9 +20,14 @@ The Braun Bauen website built with Hugo.
 - [x] x logo to twitter
 - [x] durations lighter gray
 - [x] N: add favicon - scale down
-- [ ] N: Change nav colors to fulfill contrast ratio
+- [x] N: Change nav colors to fulfill contrast ratio
 - [x] Footer: one/two lines if using alt logo, make icon not draggable, fix text highlight
 - [x] Email: tooltip green bg on copy, add copy icon next to email in footer
-- [ ] Fix lighthouse errors
-- [ ] Test out print styles, should it be forced to one page or two?
+- [x] Fix lighthouse errors
+- [x] Footer width
+- [ ] Fix Header scale on reload
+- [ ] Home Hero
+- [ ] Portfolio items
+- [ ] Home CTA
+- [x] Test out print styles, should it be forced to one page or two?
 - [ ] After domain set, change root links to domain
