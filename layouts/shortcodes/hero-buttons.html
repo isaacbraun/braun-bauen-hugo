@@ -1,0 +1,9 @@
+<section name="hero-buttons" class="px-3 sm:px-12 py-12 flex flex-col items-center gap-8 sm:gap-12">
+  <div class="flex flex-col flex-nowrap items-center gap-2">
+    <h1 class="text-4xl font-semibold tracking-wide text-center">{{ .Get "title" }}</h1>
+    <p class="text-lg font-light">{{ .Get "subtitle" }}</p>
+  </div>
+  {{ if .Inner }}
+  <div class="flex flex-row flex-wrap gap-6 h-10">{{ .Inner }}</div>
+  {{ end }}
+</section>
