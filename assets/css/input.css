@@ -25,3 +25,15 @@
 .has-tooltip:hover .tooltip {
   @apply visible opacity-100 z-50;
 }
+
+.button {
+  @apply font-mono text-green-700 rounded bg-green-200 h-full px-4 sm:px-6 flex items-center hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out;
+}
+
+.button-light {
+  @apply font-mono text-green-700 rounded bg-transparent border border-green-600 h-full px-4 sm:px-6 flex items-center hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out;
+}
+
+.button-dark {
+  @apply font-mono text-white rounded border border-green-600 bg-green-600 h-full px-4 sm:px-6 flex items-center hover:bg-transparent hover:text-green-700 transition-colors duration-300 ease-in-out;
+}
