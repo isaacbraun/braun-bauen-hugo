@@ -24,7 +24,6 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 - Lead team of student developers through a multitude of projects
 - Acted as liason to the IT Department for the website server and office hardware
 - Developed a new curriculum catalog front-end, allowing much better access to key information for faculty and students
-- Improved the development workflow and increased website accessibility
 {{% /markdown %}}
 {{< /resume-item >}}
 
@@ -44,11 +43,12 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 
 ## Education
 
-{{< resume-item title="Bachelor of Science in Computer Science" location="Southern Adventist University" />}}
+{{< resume-item title="Bachelor of Science in Computer Science" titleAfter="Undergraduate" location="Southern Adventist University" />}}
 
-{{< resume-item title="Data Analytics Certificate" location="Southern Adventist University" duration="Expected October 2024" />}}
+{{< resume-item title="Data Analytics Certificate" titleAfter="Graduate" location="" duration="Expected October 2024" />}}
 
 ## Skills
 
-**Technical:** HTML, CSS, JavaScript, XSLT, PHP, Vue.js, React.js, Git, Content Management Systems\
-**Interests:** Choral Performance, Piano, Woodworking, Photography
+**Languages:** HTML, CSS, JavaScript, XSLT, PHP, Python\
+**Frameworks/Technologies:** Vue.js, React.js, Git, Content Management Systems\
+**Other:** Choral Performance, Piano, Woodworking, Photography

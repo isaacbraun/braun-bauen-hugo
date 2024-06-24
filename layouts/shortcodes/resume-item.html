@@ -1,12 +1,14 @@
 {{ $hash := dict "vendor" "feather" "name" "hash" "className" "text-green-600" }}
-<section class="pt-3 print:pt-0">
+<section class="{{ if .Get "location" }}pt-3{{ end }} print:pt-0">
   <div class="flex flex-col sm:flex-row justify-between sm:gap-3">
     <div>
-      <h3 class="mt-1 mb-0 flex flex-row flex-nowrap items-center gap-0.5">
-        {{ partial "icons/icon" $hash }}
-        {{ .Get "location" }}
-      </h3>
-      <p class="m-0">{{ .Get "title" }}</p>
+      {{ if .Get "location" }}
+        <h3 class="mt-1 mb-0 flex flex-row flex-nowrap items-center gap-0.5">
+          {{ partial "icons/icon" $hash }}
+          {{ .Get "location" }}
+        </h3>
+      {{ end }}
+      <p class="m-0 font-semibold">{{ .Get "title" }}{{ if .Get "titleAfter" }}<span class="font-normal">&nbsp;|&nbsp;{{ .Get "titleAfter" }}</span>{{ end }}</p>
     </div>
     <p class="m-0 text-sm text-gray-500">{{ .Get "duration" }}</p>
   </div>
