@@ -1,0 +1,39 @@
+<section class="flex flex-row{{ if .Get "direction" }}-{{ .Get "direction" }}{{ end }} gap-16 mt-16">
+  <text-content class="flex flex-col justify-between w-[40%]">
+    {{ .Inner }}
+  </text-content>
+  <image-grid class="flex flex-col gap-3 w-[60%]">
+    {{ if .Get "image-1-src" }}
+      {{ $src := .Get "image-1-src" }}
+      {{ $alt := .Get "image-1-alt" }}
+      {{ $resize := images.Process "webp q100" }}
+      {{ with resources.Get $src }}
+        {{ with .Filter $resize }}
+          <img class="rounded shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if .Get "image-2-src" }}
+    <div class="grid grid-cols-2 gap-3">
+        {{ $src := .Get "image-2-src" }}
+        {{ $alt := .Get "image-2-alt" }}
+        {{ $resize := images.Process "webp q100" }}
+        {{ with resources.Get $src }}
+          {{ with .Filter $resize }}
+            <img class="rounded shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ if .Get "image-3-src" }}
+        {{ $src := .Get "image-3-src" }}
+        {{ $alt := .Get "image-3-alt" }}
+        {{ $resize := images.Process "webp q100" }}
+        {{ with resources.Get $src }}
+          {{ with .Filter $resize }}
+            <img class="rounded shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+          {{ end }}
+        {{ end }}
+    </div>
+    {{ end }}
+  </image-grid>
+</section>

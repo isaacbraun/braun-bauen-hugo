@@ -1,0 +1,12 @@
+
+      <div class="swiper-slide">Slide 1</div>
+    {{ if .Get "image-1-src" }}
+      {{ $src := .Get "image-1-src" }}
+      {{ $alt := .Get "image-1-alt" }}
+      {{ $resize := images.Process "webp q100" }}
+      {{ with resources.Get $src }}
+        {{ with .Filter $resize }}
+          <img class="rounded shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+        {{ end }}
+      {{ end }}
+    {{ end }}
