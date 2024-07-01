@@ -26,8 +26,9 @@ The Braun Bauen website built with Hugo.
 - [x] Fix lighthouse errors
 - [x] Footer width
 - [ ] Fix Header scale on reload
-- [ ] Home Hero
 - [ ] Portfolio items
 - [ ] Home CTA
+- [ ] Update endowments image after changes
 - [x] Test out print styles, should it be forced to one page or two?
 - [ ] After domain set, change root links to domain
+- [ ] 404 page
