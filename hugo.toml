@@ -13,4 +13,7 @@ title = 'Braun Bauen'
     target = "static"
   [[module.mounts]]
     source = "node_modules/alpinejs/dist/module.esm.min.js"
-    target = "static/js/alpinejs.min.js"
+    target = "assets/js/alpinejs.min.js"
+  [[module.mounts]]
+    source = "node_modules"
+    target = "assets"
