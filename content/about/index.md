@@ -49,6 +49,6 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 
 ## Skills
 
-**Languages:** HTML, CSS, JavaScript, XSLT, PHP, Python\
-**Frameworks/Technologies:** Vue.js, React.js, Git, Content Management Systems\
+**Languages:** HTML, CSS, JavaScript, XSLT, PHP, Python, R\
+**Frameworks/Technologies:** Vue.js, React.js, Git, Content Management Systems, Tableau, Plotly Dash, Streamlit\
 **Other:** Choral Performance, Piano, Woodworking, Photography
