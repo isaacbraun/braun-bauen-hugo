@@ -1,11 +1,11 @@
 <footer class="print:hidden selection:bg-green-600 selection:text-white bg-green-200 mt-20 py-9 px-3 sm:px-12 text-gray-900">
   <section class="w-full mx-auto flex flex-col sm:flex-row justify-between gap-4">
-    <a href="/" class="pointer-events-none">
+    <a href="/" class="">
       <span class="sr-only">Braun Bauen Home</span>
       {{ $resize := images.Process "webp q100" }}
       {{ with resources.Get "img/BB_Logo_Stack_Horz_Color.png" }}
         {{ with .Filter $resize}}
-          <img aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+          <img class="pointer-events-none" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
         {{ end }}
       {{ end }}
     </a>

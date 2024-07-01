@@ -4,7 +4,7 @@
       {{ $resize := images.Process "webp q100 resize 247x36" }}
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
         {{ with .Filter $resize }}
-          <img class="hidden sm:block" alt="Braun Bauen Logo" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+          <img class="hidden sm:block pointer-events-none" alt="Braun Bauen Logo" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
         {{ end }}
       {{ end }}
       {{ $resizeMark := images.Process "webp q100 resize 41x39" }}
