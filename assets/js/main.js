@@ -1,6 +1,6 @@
 import Alpine from "js/alpinejs.min.js";
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 /**
  * Alpine magic function to create a swiper instance with passed element
@@ -9,14 +9,27 @@ import { Navigation, Pagination } from "swiper/modules";
  */
 // Alpine.magic('initSwiper', () => elem => {
 const swiper = new Swiper(".swiper", {
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
+  modules: [Navigation],
+  cssMode: true,
+  initialSlide: 2,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
+  slidesPerView: 1,
+  spaceBetween: 12,
+  breakpoints: {
+    425: {
+      slidesPerView: 1.5,
+      spaceBetween: 24,
+    },
+    // 700: {
+    //   slidesPerView: 2.5,
+    //   spaceBetween: 24,
+    // },
+    1440: {
+      slidesPerView: 3.5,
+      spaceBetween: 36,
+    },
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
