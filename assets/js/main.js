@@ -14,22 +14,8 @@ const swiper = new Swiper(".swiper", {
   initialSlide: 2,
   centeredSlides: true,
   centeredSlidesBounds: true,
-  slidesPerView: 1,
-  spaceBetween: 12,
-  breakpoints: {
-    425: {
-      slidesPerView: 1.5,
-      spaceBetween: 24,
-    },
-    // 700: {
-    //   slidesPerView: 2.5,
-    //   spaceBetween: 24,
-    // },
-    1440: {
-      slidesPerView: 3.5,
-      spaceBetween: 36,
-    },
-  },
+  slidesPerView: 'auto',
+  spaceBetween: 24,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
