@@ -2,9 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+swiper-main {
+  --swiper-navigation-size: calc(0.25vw + 1.5rem);
+  --swiper-navigation-color: #078244;
+}
+
+swiper-main .swiper-button-next,
+swiper-main .swiper-button-prev {
+  margin-top: -1.25rem;
+}
+
 swiper-main .swiper-button-next.swiper-button-disabled,
 swiper-main .swiper-button-prev.swiper-button-disabled {
   @apply opacity-0;
+}
+
+@media only screen and (min-width: 350px) {
+  .swiper-wrapper {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 2%,
+      rgb(0, 0, 0) 6%,
+      rgb(0, 0, 0) 94%,
+      rgba(0, 0, 0, 0.4) 98%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }
 
 .tooltip {
