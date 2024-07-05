@@ -2,14 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-swiper-main {
-  --swiper-navigation-size: calc(0.25vw + 1.5rem);
-  --swiper-navigation-color: #078244;
+@layer base {
+  a {
+    @apply text-current [--tw-prose-links:text-current] transition-colors duration-300 ease-in-out hover:text-green-700;
+  }
 }
 
-swiper-main .swiper-button-next,
-swiper-main .swiper-button-prev {
-  margin-top: -1.25rem;
+@layer components {
+  .tooltip {
+    @apply invisible opacity-0 absolute bottom-[140%] -translate-x-10 w-20 transition-opacity duration-300 ease-in-out bg-gray-300 text-gray-900 rounded text-xs shadow-lg p-1;
+  }
+
+  .tooltip::after {
+    @apply absolute left-[50%] top-full -ml-2 border-8 border-transparent border-t-gray-300 content-[''];
+  }
+
+  .tooltip.clicked {
+    @apply bg-green-600 text-white;
+  }
+
+  .tooltip.clicked::after {
+    @apply border-t-green-600;
+  }
+
+  .has-tooltip {
+    @apply relative;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply visible opacity-100 z-50;
+  }
+
+  .button {
+    @apply font-mono text-green-700 rounded bg-green-200 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out;
+  }
+
+  .button-light {
+    @apply font-mono text-green-700 rounded bg-transparent border border-green-600 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out;
+  }
+
+  .button-dark {
+    @apply font-mono text-white rounded border border-green-600 bg-green-600 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-transparent hover:text-green-700 transition-colors duration-300 ease-in-out;
+  }
 }
 
 swiper-main .swiper-button-next.swiper-button-disabled,
@@ -17,7 +51,7 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
   @apply opacity-0;
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 450px) {
   .swiper-wrapper {
     mask-image: linear-gradient(
       to right,
@@ -29,40 +63,4 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
       rgba(0, 0, 0, 0) 100%
     );
   }
-}
-
-.tooltip {
-  @apply invisible opacity-0 absolute bottom-[140%] -translate-x-10 w-20 transition-opacity duration-300 ease-in-out bg-gray-300 text-gray-900 rounded text-xs shadow-lg p-1;
-}
-
-.tooltip::after {
-  @apply absolute left-[50%] top-full -ml-2 border-8 border-transparent border-t-gray-300 content-[''];
-}
-
-.tooltip.clicked {
-  @apply bg-green-600 text-white;
-}
-
-.tooltip.clicked::after {
-  @apply border-t-green-600;
-}
-
-.has-tooltip {
-  @apply relative;
-}
-
-.has-tooltip:hover .tooltip {
-  @apply visible opacity-100 z-50;
-}
-
-.button {
-  @apply font-mono text-green-700 rounded bg-green-200 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out;
-}
-
-.button-light {
-  @apply font-mono text-green-700 rounded bg-transparent border border-green-600 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-green-600 hover:text-white transition-colors duration-300 ease-in-out;
-}
-
-.button-dark {
-  @apply font-mono text-white rounded border border-green-600 bg-green-600 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-transparent hover:text-green-700 transition-colors duration-300 ease-in-out;
 }
