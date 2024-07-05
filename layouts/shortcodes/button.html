@@ -1,1 +1,1 @@
-<a href="{{ .Get "link" }}" title="{{ .Get "text" }}" class="button{{ if .Get "variant" }}-{{ .Get "variant" }}{{ end }}{{ if .Get "classes" }} {{ .Get "classes" }}{{ end }}">{{ .Get "text" }}</a>
+<a href="{{ .Get "link" }}" aria-label="{{ .Get "text" }}" class="button{{ if .Get "variant" }}-{{ .Get "variant" }}{{ end }}{{ if .Get "classes" }} {{ .Get "classes" }}{{ end }}">{{ .Get "text" }}</a>
