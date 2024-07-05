@@ -29,7 +29,7 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 
 {{< resume-item title="Freelance Website Developer" location="Braun Bauen" duration="June 2020 - Present" >}}
 {{% markdown %}}
-- Developed and maintained multiple websites and website modules for clients in different industries
+- Developed and maintained multiple websites and website modules for clients in different industries, from non-profit organaizations to pediatric dentistries.
 {{% /markdown %}}
 {{< /resume-item >}}
 
