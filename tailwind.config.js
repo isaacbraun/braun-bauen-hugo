@@ -9,6 +9,7 @@ module.exports = {
       'mono': ["Space Mono", "monospace"],
     },
     colors: {
+      inherit: 'inherit',
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
