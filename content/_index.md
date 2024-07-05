@@ -39,7 +39,7 @@ label="Open Chattanooga Tongue Tie Center's website in a new tab" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item
-title="University Catalog"
+title="Curriculum Catalog"
 client="Southern Adventist University"
 src="img/portfolio/sau-catalog.jpg"
 alt="Southern Adventist University's Online Catalog System, specifically a view of all programs"
@@ -69,8 +69,9 @@ label="Open Quaker Earthcare Witness' website in a new tab" >}}
 {{< /section-header >}}
 
 {{< section-header title="Work With Us" id="contact" padding="all" >}}
-{{% prose %}}
-From small fixes to large projects, we are open to work and would love to hear from you.
+{{% prose classes="max-w-none" %}}
+From small fixes to large projects, we are open to work and would love to hear from you!
+
 Email us at [contact@braunbauen.com](mailto:contact@braunbauen.com "Email Braun Bauen"). 
 {{% /prose %}}
 {{< /section-header >}}
