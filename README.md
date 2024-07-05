@@ -25,10 +25,14 @@ The Braun Bauen website built with Hugo.
 - [x] Email: tooltip green bg on copy, add copy icon next to email in footer
 - [x] Fix lighthouse errors
 - [x] Footer width
-- [ ] Fix Header scale on reload
-- [ ] Portfolio items
-- [ ] Home CTA
-- [ ] Update endowments image after changes
 - [x] Test out print styles, should it be forced to one page or two?
+- [x] Portfolio items
+- [x] Who text update
+- [ ] Fix header/footer resolution
+- [x] Section header mobile decrease
+- [x] Contact Section
+- [ ] Re-check lighthouse
 - [ ] After domain set, change root links to domain
+- [ ] Update endowments image after changes
 - [ ] 404 page
+- [ ] Fix Header scale on reload
