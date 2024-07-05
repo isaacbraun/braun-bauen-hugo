@@ -4,9 +4,7 @@
       <span class="sr-only">Braun Bauen Home</span>
       {{ $resize := images.Process "webp q100" }}
       {{ with resources.Get "img/BB_Logo_Stack_Horz_Color.png" }}
-        {{ with .Filter $resize}}
-          <img class="pointer-events-none" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
-        {{ end }}
+        <img class="pointer-events-none" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
       {{ end }}
     </a>
     <section class="flex flex-col justify-end sm:items-end gap-3">
@@ -25,7 +23,13 @@
           "icons/icon" $copy }}
         </button>
       </div>
-      <p>braun bauen 2024</p>
+      {{ $git := dict "vendor" "feather" "name" "github" }}
+      <p class="flex sm:flex-row-reverse items-center gap-2">
+        <span>braun bauen 2024</span>
+        <a href="https://github.com/isaacbraun/braun-bauen-hugo" target="_blank" title="View this website's GitHub repository">
+          {{ partial "icons/icon" $git }}
+        </a>
+      </p>
     </section>
   </section>
 </footer>
