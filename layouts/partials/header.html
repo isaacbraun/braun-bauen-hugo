@@ -1,10 +1,10 @@
 <header class="print:hidden sticky z-50 top-5 md:top-10 mx-2 pointer-events-none transition-transform duration-200 ease-in-out selection:bg-green-600 selection:text-white" x-data="{ scroll: false }" :class="scroll && 'scale-90'" @scroll.window="scroll = window.pageYOffset > 50">
   <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-smooth40 pointer-events-auto">
     <a href="/" aria-label="Braun Bauen Home">
-      {{ $resize := images.Process "webp q100 resize 247x36" }}
+      {{ $resize := images.Process "webp q100 resize 494x72" }}
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
         {{ with .Filter $resize }}
-          <img class="hidden sm:block pointer-events-none" alt="Braun Bauen Logo" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+          <img class="hidden sm:block pointer-events-none" alt="Braun Bauen Logo" width="247" height="36" src="{{ .RelPermalink }}" />
         {{ end }}
       {{ end }}
       {{ $resizeMark := images.Process "webp q100 resize 41x39" }}
@@ -15,7 +15,7 @@
       {{ end }}
     </a>
     <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200">
-      <a href="/about" class="button" title="About Braun Bauen">
+      <a href="/about" class="button" aria-label="About Braun Bauen">
         <span>about</span>
       </a>
     </nav>
