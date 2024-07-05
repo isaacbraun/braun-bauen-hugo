@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: "About Isaac Braun"
-description: "Braun Bauen is the personal brand of website developer and creative, Isaac Braun."
+description: "A website devloper and creative, Isaac Braun is the founder and leader of Braun Bauen."
 date: 2024-06-07T22:35:34-04:00
 draft: false
 ---
@@ -49,6 +49,6 @@ I love discussing and learning unfamiliar technologies or ideas, so please feel 
 
 ## Skills
 
-**Languages:** HTML, CSS, JavaScript, XSLT, PHP, Python, R\
+**Languages:** HTML, CSS, JavaScript, PHP, XSLT, Python, R\
 **Frameworks/Technologies:** Vue.js, React.js, Git, Content Management Systems, Tableau, Plotly Dash, Streamlit\
 **Other:** Choral Performance, Piano, Woodworking, Photography
