@@ -7,10 +7,12 @@ draft = false
 
 {{< section-header title="Who We Are" padding="all" >}}
 {{% prose classes="max-w-none" %}}
-Braun Bauen was started by website developer and creative, Isaac Braun, as an outlet for public work.
-We are passionate about building products and experiences that are fast, accesible, and intuitive to use.
-These passions have most easily been expressed through the development and design of websites, as it is a universal and flexible medium.
-That being said, we do not shy away from other mediums that can be used to solve interesting and challenging problems.
+Braun Bauen is a creative agency founded by website developer and creative Isaac Braun.
+Our mission is to build products and experiences that are fast, accessible, and intuitive to use.
+We discovered website development and design to be a fantastic pairing with our mission due to its universal and flexible nature.
+However, as creatives, we are always open to utilizing other mediums to tackle unique and challenging projects.
+This mentality led to the selection of our brand name, since “bauen” means “build” in the German language,
+and at our core, we are committed to “bauen” products with excellence and innovation.
 {{% /prose %}}
 {{< button text="About Isaac" link="/about" variant="dark" classes="mt-6" >}}
 {{< /section-header >}}
@@ -68,6 +70,7 @@ label="Open Quaker Earthcare Witness' website in a new tab" >}}
 
 {{< section-header title="Work With Us" id="contact" padding="all" >}}
 {{% prose %}}
-
+From small fixes to large projects, we are open to work and would love to hear from you.
+Email us at [contact@braunbauen.com](mailto:contact@braunbauen.com "Email Braun Bauen"). 
 {{% /prose %}}
 {{< /section-header >}}
