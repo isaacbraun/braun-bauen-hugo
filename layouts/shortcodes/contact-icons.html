@@ -4,27 +4,24 @@
 {{ $twitter := dict "vendor" "feather" "name" "twitter" }} 
 
 <section class="print:hidden flex flex-row gap-3 text-gray-500">
-  <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun"
-    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out">
+  <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun">
     <span class="sr-only">GitHub</span>
     {{ partial "icons/icon" $github }}
   </a>
   <button x-data="{ message: 'Copy Email' }"
     @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');"
     @mouseleave="message = 'Copy Email'"
-    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out has-tooltip"
+    class="text-current hover:text-green-700 transition-colors duration-300 ease-in-out has-tooltip"
     aria-label="Copy Email to Clipboard">
     <!-- TODO: check how screen reader understands the tooltip span - <span class="sr-only">Copy Email</span> -->
     <span class="tooltip" x-text="message" :class="message == 'Copied!' && 'clicked'"></span>
     {{ partial "icons/icon" $mail }}
   </button>
-  <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/isaac-braun-656998235"
-    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out">
+  <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/isaac-braun-656998235">
     <span class="sr-only">LinkedIn</span>
     {{ partial "icons/icon" $linkedIn }}
   </a>
-  <a aria-label="X - Formerly Twitter" target="_blank" href="https://x.com/isaacbraun1"
-    class="text-current hover:text-green-600 transition-colors duration-300 ease-in-out">
+  <a aria-label="X - Formerly Twitter" target="_blank" href="https://x.com/isaacbraun1">
     <span class="sr-only">X - Formerly Twitter</span>
     {{ partial "icons/icon" $twitter }}
   </a>
