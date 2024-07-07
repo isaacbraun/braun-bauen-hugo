@@ -9,10 +9,15 @@
   {{ with resources.Get "img/BB_Logo_Mark_64.ico" }}
     <link rel="icon" type="image/x-icon" href="{{ .RelPermalink }}">
   {{ end }}
+  {{ $js := resources.Get "js/main.js" }}
   {{ $css := resources.Get "css/main.css" }}
   {{ if hugo.IsProduction }}
-  {{ $css = $css | resources.Minify }}
+    {{ $css = $css | resources.Minify }}
+    {{ $js := $js | js.Build (dict "minify" "true") }}
+  {{ else }}
+    {{ $js := $js | js.Build }}
   {{ end }}
+  <script src="{{ $js.RelPermalink }}" defer type="module"></script>
   <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
   {{ $swiper := resources.Get "css/swiper-bundle.min.css" }}
   <link href="{{ $swiper.RelPermalink }}" rel="stylesheet" />
@@ -21,13 +26,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-    {{ $js := resources.Get "js/main.js" }}
-    {{ if hugo.IsProduction }}
-      {{ $js := $js | js.Build (dict "minify" "true") }}
-    {{ else }}
-      {{ $js := $js | js.Build }}
-    {{ end }}
-  <script src="{{ $js.RelPermalink }}" defer type="module"></script>
 </head>
 
 <body>
