@@ -21,12 +21,12 @@ and at our core, we are committed to “bauen” products with excellence and in
 {{< swiper >}}
 
 {{< swiper-item
-title="Accordion Component"
+title="Curriculum Catalog"
 client="Southern Adventist University"
-src="img/portfolio/sau-accordion.jpg"
-alt="Website accordion component with one item expanded"
-link="https://www.southern.edu/advancement/development/endowments.html#accordion-d18e87-1"
-label="Open Southern Adventist University's Endowments page in a new tab to see the accordion component in action" >}}
+src="img/portfolio/sau-catalog.jpg"
+alt="Southern Adventist University's Online Catalog System, specifically a view of all programs"
+link="https://www.southern.edu/catalog/undergraduate.html#/programs"
+label="Open Southern Adventist University's online catalog in a new tab" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item
@@ -38,15 +38,6 @@ link="https://tonguetiechattanooga.com/"
 label="Open Chattanooga Tongue Tie Center's website in a new tab" >}}
 {{< /swiper-item >}}
 
-{{< swiper-item
-title="Curriculum Catalog"
-client="Southern Adventist University"
-src="img/portfolio/sau-catalog.jpg"
-alt="Southern Adventist University's Online Catalog System, specifically a view of all programs"
-link="https://www.southern.edu/catalog/undergraduate.html#/programs"
-label="Open Southern Adventist University's online catalog in a new tab" >}}
-{{< /swiper-item >}}
-
 {{< swiper-item 
 title="Search/Filter System" 
 client="Southern Adventist University" 
@@ -54,6 +45,15 @@ src="img/portfolio/sau-endowments.jpg"
 alt="Southern Adventist University's Scholarship Searching and Filtering System"
 link="https://www.southern.edu/advancement/development/named-endowments/index.html"
 label="Open Southern Adventist University's scholarship searching and filtering system in a new tab" >}}
+{{< /swiper-item >}}
+
+{{< swiper-item
+title="Accordion Component"
+client="Southern Adventist University"
+src="img/portfolio/sau-accordion.jpg"
+alt="Website accordion component with one item expanded"
+link="https://www.southern.edu/advancement/development/endowments.html#accordion-d18e87-1"
+label="Open Southern Adventist University's Endowments page in a new tab to see the accordion component in action" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item
