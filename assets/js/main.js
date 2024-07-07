@@ -11,14 +11,27 @@ import { Navigation } from "swiper/modules";
 const swiper = new Swiper(".swiper", {
   modules: [Navigation],
   cssMode: true,
-  initialSlide: 2,
   centeredSlides: true,
   centeredSlidesBounds: true,
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   spaceBetween: 24,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  on: {
+    // Add 'atBeginning' class when swiper is at beginning of slides
+    reachBeginning: function () {
+      this.el.classList.add('atBeginning');
+    },
+    // Add 'atEnd' class when swiper is at end of slides
+    reachEnd: function () {
+      this.el.classList.add('atEnd');
+    },
+    // Removed positional classes when swiper is moved from either edge
+    fromEdge: function () {
+      this.el.classList.remove('atBeginning', 'atEnd');
+    }
   },
 });
 

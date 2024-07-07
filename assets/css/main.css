@@ -1756,6 +1756,40 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
       rgba(0, 0, 0, 0) 100%
     );
   }
+
+  .atBeginning > .swiper-wrapper {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0) 0%,
+      rgb(0, 0, 0) 94%,
+      rgba(0, 0, 0, 0.4) 98%,
+      rgba(0, 0, 0, 0) 100%
+    );
+            mask-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0) 0%,
+      rgb(0, 0, 0) 94%,
+      rgba(0, 0, 0, 0.4) 98%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  .atEnd > .swiper-wrapper {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 2%,
+      rgb(0, 0, 0) 6%,
+      rgb(0, 0, 0) 100%
+    );
+            mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 2%,
+      rgb(0, 0, 0) 6%,
+      rgb(0, 0, 0) 100%
+    );
+  }
 }
 
 @media print {
@@ -2065,14 +2099,6 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
 .selection\:text-white::selection {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.first\:\!ml-3:first-child {
-  margin-left: 0.75rem !important;
-}
-
-.last\:\!mr-3:last-child {
-  margin-right: 0.75rem !important;
 }
 
 .hover\:text-green-600:hover {

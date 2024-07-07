@@ -22,6 +22,7 @@
   }
 
   .tooltip.clicked::after {
+
     @apply border-t-green-600;
   }
 
@@ -61,6 +62,24 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
       rgb(0, 0, 0) 94%,
       rgba(0, 0, 0, 0.4) 98%,
       rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .atBeginning > .swiper-wrapper {
+    mask-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0) 0%,
+      rgb(0, 0, 0) 94%,
+      rgba(0, 0, 0, 0.4) 98%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  .atEnd > .swiper-wrapper {
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.4) 2%,
+      rgb(0, 0, 0) 6%,
+      rgb(0, 0, 0) 100%
     );
   }
 }
