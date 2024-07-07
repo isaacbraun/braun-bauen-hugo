@@ -1108,14 +1108,14 @@ a:hover {
 
 .tooltip.clicked {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 159 79 / var(--tw-bg-opacity));
+  background-color: rgb(7 130 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .tooltip.clicked::after {
   --tw-border-opacity: 1;
-  border-top-color: rgb(0 159 79 / var(--tw-border-opacity));
+  border-top-color: rgb(7 130 68 / var(--tw-border-opacity));
 }
 
 .has-tooltip {
@@ -1149,7 +1149,7 @@ a:hover {
 
 .button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 159 79 / var(--tw-bg-opacity));
+  background-color: rgb(7 130 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1170,9 +1170,9 @@ a:hover {
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(0 159 79 / var(--tw-border-opacity));
+  border-color: rgb(7 130 68 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(0 159 79 / var(--tw-bg-opacity));
+  background-color: rgb(7 130 68 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   font-family: Space Mono, monospace;
@@ -1487,6 +1487,10 @@ a:hover {
   border-width: 2px;
 }
 
+.border-4 {
+  border-width: 4px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1513,6 +1517,11 @@ a:hover {
   border-color: rgb(7 130 68 / 0.1);
 }
 
+.border-green-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(237 248 243 / var(--tw-border-opacity));
+}
+
 .border-b-green-200 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(237 248 243 / var(--tw-border-opacity));
@@ -1534,6 +1543,18 @@ a:hover {
 
 .bg-white\/80 {
   background-color: rgb(255 255 255 / 0.8);
+}
+
+.bg-green-600\/10 {
+  background-color: rgb(0 159 79 / 0.1);
+}
+
+.bg-green-200\/10 {
+  background-color: rgb(237 248 243 / 0.1);
+}
+
+.bg-green-200\/100 {
+  background-color: rgb(237 248 243 / 1);
 }
 
 .object-cover {
@@ -1674,6 +1695,11 @@ a:hover {
 .text-green-700 {
   --tw-text-opacity: 1;
   color: rgb(7 130 68 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .shadow-md {

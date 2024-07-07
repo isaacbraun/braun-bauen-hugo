@@ -1,9 +1,9 @@
 <swiper-item class="swiper-slide !h-auto max-w-[400px]">
   {{ $link := .Get "link" }}
   {{ if $link }}
-  <a class="block h-full rounded-lg bg-green-700/10 border-2 border-green-700/10 overflow-hidden" href="{{ $link }}" aria-label="{{ .Get "label" }}" target="_blank">
+  <a class="block h-full rounded-lg bg-green-200 border-4 border-green-200 overflow-hidden" href="{{ $link }}" aria-label="{{ .Get "label" }}" target="_blank">
   {{ else }}
-  <div class="block h-full rounded-lg bg-green-700/10 border-2 border-green-700/10 overflow-hidden">
+  <div class="block h-full rounded-lg bg-green-200 border-4 border-green-200 overflow-hidden">
   {{ end }}
   {{ if .Get "src" }}
     {{ $src := .Get "src" }}
@@ -11,13 +11,13 @@
     {{ $resize := images.Process "webp q100 resize 1200x" }}
     {{ with resources.Get $src }}
       {{ with .Filter $resize }}
-      <img class="object-cover" alt="{{ $alt }}" width="396" height="297" src="{{ .RelPermalink }}" />
+      <img class="object-cover" alt="{{ $alt }}" width="1200" height="900" src="{{ .RelPermalink }}" />
       {{ end }}
     {{ end }}
   {{ end }}
     <div class="px-4 pt-3 pb-5">
       <h3 class="text-lg text-green-700 font-semibold text-balance flex gap-1">{{ .Get "title" }}</h3>
-      <p class="text-gray-500">{{ .Get "client" }}</p>
+      <p class="text-gray-600">{{ .Get "client" }}</p>
       {{ if strings.ContainsNonSpace .Inner }}
         <p class="text-gray-700 mt-2">
         {{ .Inner }}
