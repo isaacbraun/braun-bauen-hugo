@@ -22,11 +22,11 @@
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
     {{ $js := resources.Get "js/main.js" }}
-    {{ $jsOpts := dict }}
     {{ if hugo.IsProduction }}
-      {{ $jsOpts := dict "minify" "true" }}
+      {{ $js := $js | js.Build (dict "minify" "true") }}
+    {{ else }}
+      {{ $js := $js | js.Build }}
     {{ end }}
-    {{ $js := $js | js.Build ($jsOpts) }}
   <script src="{{ $js.RelPermalink }}" defer type="module"></script>
 </head>
 
