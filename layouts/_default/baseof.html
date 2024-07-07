@@ -26,7 +26,7 @@
     {{ if hugo.IsProduction }}
       {{ $jsOpts := dict "minify" "true" }}
     {{ end }}
-    {{ $js := $js | js.Build $jsOpts }}
+    {{ $js := $js | js.Build ($jsOpts) }}
   <script src="{{ $js.RelPermalink }}" defer type="module"></script>
 </head>
 
