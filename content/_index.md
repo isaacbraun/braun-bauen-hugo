@@ -14,7 +14,7 @@ However, as creatives, we are always open to utilizing other mediums to tackle u
 This mentality led to the selection of our brand name since "bauen" means "build" in the German language,
 and at our core, we are committed to "bauen" products with excellence and innovation.
 {{% /prose %}}
-{{< button text="About Isaac" link="/about" variant="dark" classes="mt-6" >}}
+{{< button text="About Isaac" link="/about" classes="mt-6" >}}
 {{< /section-header >}}
 
 {{< section-header title="What We've Done" id="work" padding="all" >}}
