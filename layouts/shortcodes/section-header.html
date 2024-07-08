@@ -1,5 +1,5 @@
 <section id="{{ .Get "id" }}" class="{{ if eq (.Get "padding") "all" }}px-3 sm:px-12 {{ end }}mb-24">
-  <h2 class="text-4xl sm:text-6xl font-extrabold text-gray-500/80 tracking-wider text-balance border-b-4 border-b-green-200 rounded mb-6 {{ if eq (.Get "padding") "header" }}px-3 sm:px-12{{ end }}">
+  <h2 class="text-4xl sm:text-6xl font-extrabold text-gray-900 tracking-wider text-balance border-b-2 border-b-green-600 rounded-sm mb-6 {{ if eq (.Get "padding") "header" }}px-3 sm:px-12{{ end }}">
     {{ .Get "title" }}
   </h2>
   {{ .Inner }}
