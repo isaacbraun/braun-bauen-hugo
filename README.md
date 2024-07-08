@@ -28,11 +28,12 @@ The Braun Bauen website built with Hugo.
 - [x] Test out print styles, should it be forced to one page or two?
 - [x] Portfolio items
 - [x] Who text update
-- [ ] Fix header/footer resolution
 - [x] Section header mobile decrease
 - [x] Contact Section
-- [ ] Re-check lighthouse
+- [x] Re-check lighthouse
+- [ ] Fix header/footer resolution
 - [ ] After domain set, change root links to domain
 - [ ] Update endowments image after changes
 - [ ] 404 page
 - [ ] Fix Header scale on reload
+- [ ] Animate swiper gradient on scroll 
