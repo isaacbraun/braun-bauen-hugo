@@ -35,7 +35,7 @@
   }
 
   .button {
-    @apply font-mono text-green-700 rounded bg-green-200 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-green-700 hover:text-white transition-colors duration-300 ease-in-out;
+    @apply font-mono text-green-700 rounded bg-green-200 px-4 sm:px-6 h-[41px] w-fit flex items-center hover:bg-green-700 hover:text-white transition-colors duration-300 ease-in-out hover:selection:bg-gray-700;
   }
 
   .button-light {
