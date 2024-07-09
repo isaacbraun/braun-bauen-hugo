@@ -32,8 +32,8 @@ The Braun Bauen website built with Hugo.
 - [x] Contact Section
 - [x] Re-check lighthouse
 - [x] Fix header/footer resolution
+- [x] 404 page
 - [ ] After domain set, change root links to domain
 - [ ] Update endowments image after changes
-- [ ] 404 page
 - [ ] Fix Header scale on reload
 - [ ] Animate swiper gradient on scroll 
