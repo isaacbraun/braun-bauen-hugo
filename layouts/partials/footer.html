@@ -2,9 +2,11 @@
   <section class="w-full mx-auto flex flex-col sm:flex-row justify-between gap-4">
     <a href="/" class="">
       <span class="sr-only">Braun Bauen Home</span>
-      {{ $resize := images.Process "webp q100" }}
-      {{ with resources.Get "img/BB_Logo_Stack_Horz_Color.png" }}
-        <img class="pointer-events-none" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+      {{ $resize := images.Process "webp q100 resize x150" }}
+      {{ with resources.Get "img/BB_Logo_Stacked_Color-300.png" }}
+        {{ with .Filter $resize }}
+      <img class="pointer-events-none h-20 w-auto" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+        {{ end }}
       {{ end }}
     </a>
     <section class="flex flex-col justify-end sm:items-end gap-3">

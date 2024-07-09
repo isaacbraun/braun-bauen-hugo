@@ -1317,6 +1317,10 @@ a:hover {
   height: 100%;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1336,6 +1340,10 @@ a:hover {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-\[400px\] {

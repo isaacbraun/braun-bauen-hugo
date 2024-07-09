@@ -31,7 +31,7 @@ The Braun Bauen website built with Hugo.
 - [x] Section header mobile decrease
 - [x] Contact Section
 - [x] Re-check lighthouse
-- [ ] Fix header/footer resolution
+- [x] Fix header/footer resolution
 - [ ] After domain set, change root links to domain
 - [ ] Update endowments image after changes
 - [ ] 404 page
