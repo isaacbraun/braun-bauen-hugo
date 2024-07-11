@@ -6,8 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }} | Braun Bauen</title>
   <meta name="description" content="{{ .Description }}" />
-  {{ with resources.Get "img/BB_Logo_Mark_64.ico" }}
-    <link rel="icon" type="image/x-icon" href="{{ .RelPermalink }}">
+  {{ with resources.Get "favicon/apple-touch-icon.png" }}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}">
+  {{ end }}
+  {{ with resources.Get "favicon/favicon-32x32.png" }}
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ .RelPermalink }}">
+  {{ end }}
+  {{ with resources.Get "favicon/favicon-16x16.png" }}
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ .RelPermalink }}">
+  {{ end }}
+  {{ with resources.Get "favicon/site.webmanifest" }}
+    <link rel="manifest" href="{{ .RelPermalink }}">
   {{ end }}
   {{ $css := resources.Get "css/main.css" }}
   {{ if hugo.IsProduction }}
