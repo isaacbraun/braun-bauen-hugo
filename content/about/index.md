@@ -7,10 +7,10 @@ draft: false
 ---
 
 ## Profile
-I am a detail-oriented and communicative creative dedicated to crafting exceptional user experiences.
-I am naturally highly organized and take immense responsibility in my work and relationships.
-My motivation and fulfillment come from collaborating with driven and innovative individuals and helping cultivate others to fulfill their potential.
-I have a strong sense of integrity and am committed to producing the highest quality work possible.
+I am an organized and thoughtful creative dedicated to crafting intuitive and beautiful user experiences.
+My motivation comes from seeing a project to completion and knowing I have made somebody's experience better.
+I thrive in a collaborative environment and find fulfillment in helping my creations and those around me realize their full potential.
+With a strong sense of responsibility for my work and collaborators, I am committed to delivering high-quality and detailed solutions.
 {{< contact-icons >}}
 
 ## Experience
@@ -47,6 +47,6 @@ I have a strong sense of integrity and am committed to producing the highest qua
 
 ## Skills
 
-**Languages:** HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, R\
+**Languages:** HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, SQL, R\
 **Frameworks/Technologies:** Vue.js, React.js, Git, Content Management Systems, Tableau, Plotly Dash, Streamlit\
 **Other:** Choral Performance, Piano, Woodworking, Photography
