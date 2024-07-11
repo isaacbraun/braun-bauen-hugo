@@ -1300,6 +1300,10 @@ a:hover {
   height: 2.5rem;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1317,10 +1321,6 @@ a:hover {
   height: 100%;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1333,6 +1333,10 @@ a:hover {
   width: 60%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -1340,10 +1344,6 @@ a:hover {
 
 .w-full {
   width: 100%;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .max-w-\[400px\] {
@@ -1360,10 +1360,6 @@ a:hover {
 
 .max-w-screen-xl {
   max-width: 1280px;
-}
-
-.max-w-screen-2xl {
-  max-width: 1536px;
 }
 
 .scale-90 {
@@ -2159,11 +2155,6 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .sm\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 
   .sm\:text-5xl {

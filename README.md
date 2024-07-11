@@ -35,5 +35,7 @@ The Braun Bauen website built with Hugo.
 - [x] 404 page
 - [x] After domain set, change root links to domain
 - [x] Update endowments image after changes
+- [x] Swap title/location resume-item
 - [ ] Fix Header scale on reload
+- [ ] Fade out header border similar to logo?
 - [ ] Animate swiper gradient on scroll 
