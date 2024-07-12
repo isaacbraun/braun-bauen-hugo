@@ -21,7 +21,7 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 - Supported and collaborated with over 150 content editors in varying departments
 - Led team of students through front-end development and content management projects
 - Developed a new curriculum catalog front-end, providing easier access to crucial information for faculty and students
-- Acted as liasion to the IT Department for the website server and office hardware
+- Acted as liaison to the IT Department for the website server and office hardware
 {{% /markdown %}}
 {{< /resume-item >}}
 
