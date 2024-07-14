@@ -27,7 +27,7 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 
 {{< resume-item heading="Freelance Website Developer" desc="Braun Bauen" duration="June 2020 - Present" >}}
 {{% markdown %}}
-- Developed and maintained multiple websites and website modules for clients in different industries, from non-profit organizations to pediatric dentistry
+- Developed and maintained multiple websites and implemented small features for clients in different industries, ranging from non-profit organizations to pediatric dentistry
 {{% /markdown %}}
 {{< /resume-item >}}
 
