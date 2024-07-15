@@ -30,7 +30,7 @@ label="Open Southern Adventist University's online catalog in a new tab" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item
-title="Start-to-finish Website"
+title="Start-to-Finish Website"
 client="Chattanooga Tongue Tie Center"
 src="img/portfolio/cttc-home.jpg"
 alt="Chattanooga Tongue Tie Center's Website Homepage"
@@ -47,12 +47,21 @@ link="https://www.southern.edu/advancement/development/named-endowments/index.ht
 label="Open Southern Adventist University's scholarship searching and filtering system in a new tab" >}}
 {{< /swiper-item >}}
 
+{{< swiper-item 
+title="Taxi Data Dashboard" 
+client="Personal Project" 
+src="img/portfolio/taxi-tableau.jpg"
+alt="A Tableau Dashboard showcasing NYC Taxi Trip Data in charts and numbers"
+link="https://bit.ly/braun-nyc-taxi"
+label="Open the NYC Taxi Trip Dashboard in a new tab" >}}
+{{< /swiper-item >}}
+
 {{< swiper-item
 title="Accordion Component"
 client="Southern Adventist University"
 src="img/portfolio/sau-accordion.jpg"
 alt="Website accordion component with one item expanded"
-link="https://www.southern.edu/advancement/development/endowments.html#accordion-d18e87-1"
+link="https://www.southern.edu/advancement/development/endowments.html#accordion-d19e87-1"
 label="Open Southern Adventist University's Endowments page in a new tab to see the accordion component in action" >}}
 {{< /swiper-item >}}
 
