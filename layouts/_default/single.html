@@ -13,9 +13,9 @@
     {{ end }}
     <span>|</span>
     {{ with .GetTerms "tags" }}
-      <ul class="flex flex-row gap-3 m-0 not-prose marker:list-none">
+      <ul class="flex flex-row gap-3 m-0 not-prose list-none">
         {{ range . }}
-          <li class="underline underline-offset-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+          <li><a class="underline" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
         {{ end }}
       </ul>
     {{ end }}

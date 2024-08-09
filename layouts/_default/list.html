@@ -13,21 +13,36 @@
       {{ end }}
     {{ end }}
   </h1>
-  <aside class="flex flex-row gap-3 mt-2 pb-2 pl-1 text-gray-500 border-b-2 rounded-sm border-green-600">
-    <ul class="flex flex-row gap-3 m-0 not-prose marker:list-none">
+  <aside class="flex flex-row gap-3 mt-2 mb-6 pb-2 pl-1 text-gray-500 border-b-2 rounded-sm border-green-600">
+    <ul class="flex flex-row gap-3 m-0 not-prose list-none">
       {{ range .Site.Taxonomies.tags }}
-        <li class="underline underline-offset-2"><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+        <li><a class="underline" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
       {{ end }}
     </ul>
   </aside>
   <article>
-    <ul>
-
-      {{ range $pages.ByDate }}
+    <ul class="m-0 p-0 list-none">
+      {{ range $pages.ByDate.Reverse }}
+      <li class="m-0 p-0">
         <a title="{{ .LinkTitle }}" href="{{ .RelPermalink }}">
-          <h2>{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</h2>
-          <p>{{ .Description }}</p>
+          <h2 class="text-xl text-current mt-6 mb-1">{{ .LinkTitle }}</h2>
         </a>
+        <div class="flex flex-row gap-3">
+          {{ with .Date }}
+            {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := . | time.Format ":date_long" }}
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          {{ end }}
+          <span>|</span>
+          {{ with .GetTerms "tags" }}
+            <ul class="flex flex-row gap-3 m-0 not-prose list-none">
+              {{ range . }}
+                <li><a class="underline" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </li>
       {{ end }}
     </ul>
   </article>
