@@ -4,7 +4,7 @@
 
 @layer base {
   a {
-    @apply text-current [--tw-prose-links:text-current] transition-colors duration-300 ease-in-out hover:text-green-700;
+    @apply text-current underline-offset-2 [--tw-prose-links:text-current] transition-colors duration-300 ease-in-out hover:text-green-700;
   }
 }
 
