@@ -16,12 +16,28 @@
     {{ .Description }}
   </aside>
   <article>
-    <ul>
-      {{ range .Pages.ByDate }}
+    <ul class="m-0 p-0 list-none">
+      {{ range .Pages.ByDate.Reverse }}
+      <li class="m-0 p-0">
         <a title="{{ .LinkTitle }}" href="{{ .RelPermalink }}">
-          <h2>{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</h2>
-          <p>{{ .Description }}</p>
+          <h2 class="text-xl text-current mt-6 mb-1">{{ .LinkTitle }}</h2>
         </a>
+        <div class="flex flex-row gap-3">
+          {{ with .Date }}
+            {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := . | time.Format ":date_long" }}
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+          {{ end }}
+          <span>|</span>
+          {{ with .GetTerms "tags" }}
+            <ul class="flex flex-row gap-3 m-0 not-prose list-none">
+              {{ range . }}
+                <li><a class="underline" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </li>
       {{ end }}
     </ul>
   </article>
