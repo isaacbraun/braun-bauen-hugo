@@ -1,0 +1,31 @@
+{{ define "main" }}
+<!-- <main -->
+<!--   class="selection:bg-green-200 mt-16 md:mt-32 print:mt-2 prose prose-h2:mb-3 prose-h2:text-gray-400 prose-h3:text-lg px-3 mx-auto min-h-screen max-w-screen-xl print:max-w-none print:prose-h2:mb-1"> -->
+<main class="selection:bg-green-200 mt-16 md:mt-32 print:mt-2 mx-auto max-w-screen-xl min-h-screen">
+  <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-wider text-balance">
+    {{ .Title }}
+  </h1>
+  <p class="mt-2 pb-2 pl-1 text-gray-500 border-b-2 rounded-sm border-green-600">
+    {{ .Description }}
+  </p>
+  <!-- "{{ .Content }}" pulls from the Markdown content of the corresponding _index.md -->
+  {{ .Content }}
+
+  <section>
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages }}
+
+    {{ range $paginator.Pages }}
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+      <!-- Ranges through content/posts/*.md -->
+      <!-- {{ range .Pages }} -->
+      <!-- <li> -->
+      <!--   <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} | {{ .LinkTitle }}</a> -->
+      <!-- </li> -->
+      <!-- {{ end }} -->
+  </section>
+</main>
+{{ end }}
