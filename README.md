@@ -1,7 +1,27 @@
 # Braun Bauen - Hugo
-The Braun Bauen website built with Hugo.
+The Braun Bauen website built with Hugo. Currently live at [braunbauen.com]().
+
+# Usage
+All commands are declared in the `Makefile`
+
+## Initialization
+1. Reference [Hugo's documentation](https://gohugo.io/installation/macos/) to ensure Go and Hugo are installed
+1. Clone repo and cd into directory
+2. Run `npm install`
+
+## Development
+TailwindCSS has been set up using the Tailwind CLI, so development requires running two commands simulitaniously in two terminals.
+1. Run `make server` - this will run Hugo's server and render draft content
+2. Run `make tw-watch` - this starts Tailwind's CLI watching the files for changes
+
+## Build
+Run `make build`
+
 
 # TODO
+- [ ] Fix Header scale on reload
+- [ ] Fade out header border similar to logo?
+- [ ] Animate swiper gradient on scroll 
 - [x] Look into Hugo compression [Hugo Doc](https://gohugo.io/hugo-pipes/postprocess/)
 - [x] Create scripts for tailwind dev and build
 - [x] Fix header middle spacing
@@ -36,6 +56,3 @@ The Braun Bauen website built with Hugo.
 - [x] After domain set, change root links to domain
 - [x] Update endowments image after changes
 - [x] Swap title/location resume-item
-- [ ] Fix Header scale on reload
-- [ ] Fade out header border similar to logo?
-- [ ] Animate swiper gradient on scroll 
