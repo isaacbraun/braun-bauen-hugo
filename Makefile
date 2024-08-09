@@ -12,7 +12,7 @@ build:
 
 server:
 	@echo "Running Hugo Server"
-	@hugo server
+	@hugo server -D
 
 tw-watch:
 	@echo "Watching for Tailwind changes"
