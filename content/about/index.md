@@ -20,7 +20,7 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 - Managed and developed the university's ~1500-page marketing website
 - Supported and collaborated with over 150 content editors in varying departments
 - Led team of students through front-end development and content management projects
-- Developed a new curriculum catalog front-end, providing easier access to crucial information for faculty and students
+- Developed a new curriculum catalog front-end, providing better access to crucial information for faculty and students
 - Acted as liaison to the IT Department for the website server and office hardware
 {{% /markdown %}}
 {{< /resume-item >}}
@@ -48,5 +48,5 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 ## Skills
 
 **Languages:** HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, SQL, R\
-**Frameworks/Technologies:** Vue.js, React.js, Git, Content Management Systems, Tableau, Plotly Dash, Streamlit\
+**Frameworks/Technologies:** Vue.js, React.js, React Native, Git, Content Management Systems, Tableau\
 **Other:** Choral Performance, Piano, Woodworking, Photography
