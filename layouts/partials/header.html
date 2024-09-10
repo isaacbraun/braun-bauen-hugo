@@ -1,5 +1,5 @@
 <header class="print:hidden sticky z-50 top-5 md:top-10 mx-2 pointer-events-none transition-transform duration-200 ease-in-out selection:bg-green-600 selection:text-white" x-data="{ scroll: false }" :class="scroll && 'scale-90'" @scroll.window="scroll = window.pageYOffset > 50">
-  <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white shadow-smooth40 pointer-events-auto">
+  <div class="mx-auto flex flow-row flex-nowrap items-center gap-3 w-fit p-3 rounded-lg border border-gray-200 h-[67px] bg-white dark:bg-dark-900 dark:border-dark-900 shadow-smooth40 pointer-events-auto">
     <a href="https://braunbauen.com" aria-label="Braun Bauen Home">
       {{ $resize := images.Process "webp q100 resize 494x72" }}
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
@@ -14,7 +14,10 @@
         {{ end }}
       {{ end }}
     </a>
-    <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200">
+    <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200 dark:border-dark-300">
+      <a href="/blog" class="button" aria-label="Braun Bauen's Blog Posts">
+        <span>blog</span>
+      </a>
       <a href="/about" class="button" aria-label="About Braun Bauen">
         <span>about</span>
       </a>

@@ -6,6 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }} | Braun Bauen</title>
   <meta name="description" content="{{ .Description }}" />
+  <meta name="color-scheme" content="light dark">
+  <style>
+    body {
+      background-color: #ffffff;
+      transition: background-color 0.5s ease-in-out;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #131313;
+      }
+    }
+  </style>
   {{ with resources.Get "favicon/apple-touch-icon.png" }}
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .RelPermalink }}">
   {{ end }}

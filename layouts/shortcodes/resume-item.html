@@ -3,14 +3,14 @@
   <div class="flex flex-col sm:flex-row justify-between sm:gap-3">
     <div>
       {{ if .Get "heading" }}
-        <h3 class="mt-1 mb-0 flex flex-row flex-nowrap items-center gap-0.5">
+        <h3 class="mt-1 mb-0 flex flex-row flex-nowrap items-center gap-0.5 dark:text-green-200">
           {{ partial "icons/icon" $hash }}
           {{ .Get "heading" }}
         </h3>
       {{ end }}
-      <p class="m-0 font-semibold">{{ .Get "desc" }}{{ if .Get "descAfter" }}<span class="font-normal">&nbsp;|&nbsp;{{ .Get "descAfter" }}</span>{{ end }}</p>
+      <p class="m-0 font-semibold dark:text-gray-300">{{ .Get "desc" }}{{ if .Get "descAfter" }}<span class="font-normal">&nbsp;|&nbsp;{{ .Get "descAfter" }}</span>{{ end }}</p>
     </div>
-    <p class="m-0 text-sm text-gray-500">{{ .Get "duration" }}</p>
+    <p class="m-0 text-sm text-gray-500 dark:text-gray-400">{{ .Get "duration" }}</p>
   </div>
   <div>{{ .Inner }}</div>
 </section>

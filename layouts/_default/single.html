@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $hash := dict "vendor" "feather" "name" "hash" "className" "text-green-600 hidden sm:block" }}
 <main class="bauen-prose">
-  <h1 class="mb-0 flex flex-row flex-nowrap gap-0.5 text-balance">
+  <h1 class="mb-0 flex flex-row flex-nowrap gap-0.5 text-balance dark:text-white">
     {{ partial "icons/icon" $hash }}
     <span>{{ .Title }}</span>
   </h1>
