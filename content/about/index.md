@@ -48,5 +48,5 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 ## Skills
 
 **Languages:** HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, SQL, R\
-**Frameworks/Technologies:** Vue.js, React.js, React Native, Git, Content Management Systems, Tableau\
+**Frameworks/Technologies:** Vue.js, React.js, React Native, Git, Content Management Systems, AWS, Tableau\
 **Other:** Choral Performance, Piano, Woodworking, Photography
