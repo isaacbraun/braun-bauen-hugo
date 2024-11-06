@@ -43,7 +43,7 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 
 {{< resume-item heading="Southern Adventist University" desc="Bachelor of Science in Computer Science" descAfter="Undergraduate" />}}
 
-{{< resume-item desc="Data Analytics Certificate" descAfter="Graduate" duration="Expected October 2024" />}}
+{{< resume-item desc="Data Analytics Certificate" descAfter="Graduate" />}}
 
 ## Skills
 
