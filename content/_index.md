@@ -61,7 +61,7 @@ title="Accordion Component"
 client="Southern Adventist University"
 src="img/portfolio/sau-accordion.jpg"
 alt="Website accordion component with one item expanded"
-link="https://www.southern.edu/advancement/development/endowments.html#accordion-d19e87-1"
+link="https://www.southern.edu/advancement/development/endowments.html#What%20Is%20An%20Endowment%3F"
 label="Open Southern Adventist University's Endowments page in a new tab to see the accordion component in action" >}}
 {{< /swiper-item >}}
 
@@ -79,7 +79,7 @@ label="Open Quaker Earthcare Witness' website in a new tab" >}}
 
 {{< section-header title="Work With Us" id="contact" padding="all" >}}
 {{% prose classes="max-w-none" %}}
-From minor fixes to large projects, we are open to work and would love to hear from you!\
+From minor fixes to large projects, we are excited to take on challenges and would love to hear from you!\
 We specialize in website development but feel free to reach out with any non-web questions or ideas.
 
 Email us at [contact@braunbauen.com](mailto:contact@braunbauen.com "Email Braun Bauen"). 

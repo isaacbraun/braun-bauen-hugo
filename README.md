@@ -19,6 +19,7 @@ Run `make build`
 
 
 # TODO
+- [ ] Rework contact copy
 - [ ] Fix Header scale on reload
 - [ ] Fade out header border similar to logo?
 - [ ] Animate swiper gradient on scroll 
