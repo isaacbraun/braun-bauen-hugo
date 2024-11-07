@@ -1903,7 +1903,7 @@ a:hover {
 
   .bauen-prose :is(:where(strong):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
     --tw-text-opacity: 1;
-    color: rgb(0 159 79 / var(--tw-text-opacity));
+    color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }
 
@@ -2826,6 +2826,14 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:block {
+    display: block;
+  }
+
+  .dark\:hidden {
+    display: none;
+  }
+
   .dark\:border-dark-300 {
     --tw-border-opacity: 1;
     border-color: rgb(0 56 28 / var(--tw-border-opacity));
@@ -2836,9 +2844,19 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
     border-color: rgb(0 11 6 / var(--tw-border-opacity));
   }
 
+  .dark\:border-green-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(7 130 68 / var(--tw-border-opacity));
+  }
+
   .dark\:bg-dark-900 {
     --tw-bg-opacity: 1;
     background-color: rgb(0 11 6 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-green-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(7 130 68 / var(--tw-bg-opacity));
   }
 
   .dark\:text-gray-300 {
@@ -2854,11 +2872,6 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
   .dark\:text-green-200 {
     --tw-text-opacity: 1;
     color: rgb(237 248 243 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-green-600 {
-    --tw-text-opacity: 1;
-    color: rgb(0 159 79 / var(--tw-text-opacity));
   }
 
   .dark\:text-white {
@@ -2884,6 +2897,14 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
   .dark\:selection\:bg-green-700::selection {
     --tw-bg-opacity: 1;
     background-color: rgb(7 130 68 / var(--tw-bg-opacity));
+  }
+}
+
+@media (min-width: 640px) {
+  @media (prefers-color-scheme: dark) {
+    .sm\:dark\:block {
+      display: block;
+    }
   }
 }
 

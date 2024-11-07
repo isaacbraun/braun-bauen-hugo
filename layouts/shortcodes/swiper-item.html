@@ -1,9 +1,9 @@
 <swiper-item class="swiper-slide !h-auto max-w-[400px]">
   {{ $link := .Get "link" }}
   {{ if $link }}
-  <a class="block h-full rounded-lg bg-green-200 dark:bg-dark-900 border-4 border-green-200 dark:border-dark-900 overflow-hidden" href="{{ $link }}" aria-label="{{ .Get "label" }}" target="_blank">
+  <a class="block h-full rounded-lg bg-green-200 dark:bg-green-700 border-4 border-green-200 dark:border-green-700 overflow-hidden" href="{{ $link }}" aria-label="{{ .Get "label" }}" target="_blank">
   {{ else }}
-  <div class="block h-full rounded-lg bg-green-200 dark:bg-dark-900 border-4 border-green-200 dark:border-dark-900 overflow-hidden">
+  <div class="block h-full rounded-lg bg-green-200 dark:bg-green-700 border-4 border-green-200 dark:border-green-700 overflow-hidden">
   {{ end }}
   {{ if .Get "src" }}
     {{ $src := .Get "src" }}
@@ -16,8 +16,8 @@
     {{ end }}
   {{ end }}
     <div class="px-4 pt-3 pb-5">
-      <h3 class="text-lg text-green-700 dark:text-green-600 font-semibold text-balance flex gap-1">{{ .Get "title" }}</h3>
-      <p class="text-gray-600 dark:text-gray-300">{{ .Get "client" }}</p>
+      <h3 class="text-lg text-green-700 dark:text-white font-semibold text-balance flex gap-1">{{ .Get "title" }}</h3>
+      <p class="text-gray-600 dark:text-green-200">{{ .Get "client" }}</p>
       {{ if strings.ContainsNonSpace .Inner }}
         <p class="text-gray-700 mt-2">
         {{ .Inner }}

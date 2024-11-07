@@ -5,7 +5,12 @@
       {{ $resize := images.Process "webp q100 resize x150" }}
       {{ with resources.Get "img/BB_Logo_Stacked_Color-300.png" }}
         {{ with .Filter $resize }}
-      <img class="pointer-events-none h-20 w-auto" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+      <img class="dark:hidden pointer-events-none h-20 w-auto" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+        {{ end }}
+      {{ end }}
+      {{ with resources.Get "img/BB_Logo_Stacked_White.png" }}
+        {{ with .Filter $resize }}
+      <img class="hidden dark:block pointer-events-none h-20 w-auto" aria-hidden="true" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
         {{ end }}
       {{ end }}
     </a>

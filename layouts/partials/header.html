@@ -4,7 +4,12 @@
       {{ $resize := images.Process "webp q100 resize 494x72" }}
       {{ with resources.Get "img/BB_Logo_CompactHorz_Color_NoPadding.png" }}
         {{ with .Filter $resize }}
-          <img class="hidden sm:block pointer-events-none" alt="Braun Bauen Logo" width="247" height="36" src="{{ .RelPermalink }}" />
+          <img class="hidden sm:light:block pointer-events-none" alt="Braun Bauen Logo" width="247" height="36" src="{{ .RelPermalink }}" />
+        {{ end }}
+      {{ end }}
+      {{ with resources.Get "img/BB_Logo_CompactHorz_White_NoPadding.png" }}
+        {{ with .Filter $resize }}
+          <img class="hidden sm:dark:block pointer-events-none" alt="Braun Bauen Logo" width="247" height="36" src="{{ .RelPermalink }}" />
         {{ end }}
       {{ end }}
       {{ $resizeMark := images.Process "webp q100 resize 41x39" }}
@@ -15,9 +20,6 @@
       {{ end }}
     </a>
     <nav class="flex flex-row gap-3 h-full pl-3 border-l border-gray-200 dark:border-dark-300">
-      <a href="/blog" class="button" aria-label="Braun Bauen's Blog Posts">
-        <span>blog</span>
-      </a>
       <a href="/about" class="button" aria-label="About Braun Bauen">
         <span>about</span>
       </a>

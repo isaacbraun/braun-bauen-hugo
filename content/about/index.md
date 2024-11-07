@@ -43,10 +43,10 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 
 {{< resume-item heading="Southern Adventist University" desc="Bachelor of Science in Computer Science" descAfter="Undergraduate" />}}
 
-{{< resume-item desc="Data Analytics Certificate" descAfter="Graduate" duration="Expected October 2024" />}}
+{{< resume-item desc="Data Analytics Certificate" descAfter="Graduate" />}}
 
 ## Skills
 
-**Languages:** HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, SQL, R\
-**Frameworks/Technologies:** Vue.js, React.js, React Native, Git, Content Management Systems, Tableau\
-**Other:** Choral Performance, Piano, Woodworking, Photography
+**Languages** | HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, SQL, R\
+**Frameworks/Technologies** | Vue.js, React.js, React Native, Git, Content Management Systems, Tableau\
+**Other** | Choral Performance, Piano, Woodworking, Photography

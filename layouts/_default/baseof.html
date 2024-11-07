@@ -49,6 +49,7 @@
 </head>
 
 <body>
+  {{ partial "partials/theme-toggle.html" }}
   {{ partial "partials/header.html" }}
   {{ block "main" . }}{{ end }}
   {{ partial "partials/footer.html" }}

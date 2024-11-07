@@ -1,0 +1,6 @@
+<button>
+  {{ $sun := dict "vendor" "feather" "name" "sun" }}
+  {{ $moon := dict "vendor" "feather" "name" "moon" }}
+  <span class="sr-only">Light Mode</span>
+  {{ partial "icons/icon" $sun }}
+</button>
