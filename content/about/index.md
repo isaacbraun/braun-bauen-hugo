@@ -17,25 +17,28 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 
 {{< resume-item heading="Website Development Manager" desc="Southern Adventist University" duration="November 2022 - Present" >}}
 {{% markdown %}}
-- Managed and developed the university's ~1500-page marketing website
-- Supported and collaborated with over 150 content editors in varying departments
-- Led team of students through front-end development and content management projects
-- Developed a new curriculum catalog front-end, providing better access to crucial information for faculty and students
-- Acted as liaison to the IT Department for the website server and office hardware
+- Manage and develop the university's ~2500-page marketing website
+- Develop full-stack features within a content management system via HTML, CSS, JS, and PHP
+- Support and collaborate with over 150 content editors in varying departments
+- Lead a team of students through full-stack development and content management projects
+- Developed a curriculum catalog front-end app using Vue.js, ensuring easy access to crucial information while creating a more exciting user experience
 {{% /markdown %}}
 {{< /resume-item >}}
 
 {{< resume-item heading="Freelance Website Developer" desc="Braun Bauen" duration="June 2020 - Present" >}}
 {{% markdown %}}
-- Developed and maintained multiple websites and implemented small features for clients in different industries, ranging from non-profit organizations to pediatric dentistry
+- Build and maintain websites (WordPress, etc.) for clients in a range of industries
+- Provide features and modifications for existing websites 
+- Developed a search and filter interface for university endowments in React.js
+- Wrote user-facing technical documentation for SaaS products 
 {{% /markdown %}}
 {{< /resume-item >}}
 
 {{< resume-item heading="Student Website Developer" desc="Southern Adventist University" duration="January 2020 – May 2022" >}}
 {{% markdown %}}
-- Developed and implemented multiple features for the university's marketing website
-- Trained CMS editors
-- Built campus virtual tours from panoramic photos
+- Developed and implemented front-end features for the university's marketing website
+- Provided CMS training and assistance to content editors
+- Stitched together campus virtual tours from panoramic photos using 3DVista
 {{% /markdown %}}
 {{< /resume-item >}}
 
@@ -48,5 +51,5 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 ## Skills
 
 **Languages:** HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, SQL, R\
-**Frameworks/Technologies:** Vue.js, React.js, React Native, Git, Content Management Systems, AWS, Tableau\
-**Other:** Choral Performance, Piano, Woodworking, Photography
+**Technologies:** Vue.js, React.js, React Native, Git, AWS, CMS (WordPress, Modern Campus, etc.), Tableau\
+**Other:** Technical Writing, Photography, Choral Performance, Piano, Woodworking 
