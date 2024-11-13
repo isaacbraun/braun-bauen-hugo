@@ -2,7 +2,7 @@
 layout: resume
 title: "About Isaac Braun"
 description: "A website developer and creative, Isaac Braun is the founder and leader of Braun Bauen."
-date: 2024-06-07T22:35:34-04:00
+date: 2024-11-12T22:35:34-04:00
 draft: false
 ---
 
@@ -17,11 +17,11 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 
 {{< resume-item heading="Website Development Manager" desc="Southern Adventist University" duration="November 2022 - Present" >}}
 {{% markdown %}}
-- Manage and develop the ~2500-page marketing website
+- Manage and develop the ~2500-page [marketing website](https://www.southern.edu)
 - Develop full-stack features within a content management system via HTML, CSS, JS, and PHP
 - Support and collaborate with over 150 content editors in varying departments
 - Lead a team of students through full-stack development and content management projects
-- Developed a curriculum catalog front-end app using Vue.js, ensuring easy access to crucial information while creating a more exciting user experience
+- Developed a [curriculum catalog front-end app](https://www.southern.edu/catalog/undergraduate.html#/programs) by using Vue.js to consume a RESTful API, ensuring easy access to crucial information while creating a more exciting user experience
 {{% /markdown %}}
 {{< /resume-item >}}
 
@@ -29,7 +29,7 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 {{% markdown %}}
 - Build and maintain websites (WordPress, etc.) for clients in a range of industries
 - Provide features and modifications for existing websites 
-- Developed a search and filter interface for university endowments in React.js
+- Developed a [search and filter interface](https://www.southern.edu/advancement/development/named-endowments/index.html) for university endowments in React.js
 - Wrote user-facing technical documentation for SaaS products 
 {{% /markdown %}}
 {{< /resume-item >}}
@@ -51,5 +51,6 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 ## Skills
 
 **Languages:** HTML, CSS, JavaScript/TypeScript, PHP, XSLT, Python, SQL, R\
-**Technologies:** Vue.js, React.js, React Native, Git, AWS, CMS (WordPress, Modern Campus, etc.), Tableau\
+**Frameworks:** Vue.js, React.js, React Native, Scikit Learn, Plotly, Shiny\
+**Technologies:** Git, AWS, RESTful APIs, CMS (WordPress, Modern Campus, etc.), Tableau\
 **Other:** Technical Writing, Photography, Choral Performance, Piano, Woodworking 
