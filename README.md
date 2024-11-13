@@ -19,10 +19,11 @@ Run `make build`
 
 
 # TODO
-- [ ] Rework contact copy
 - [ ] Fix Header scale on reload
 - [ ] Fade out header border similar to logo?
 - [ ] Animate swiper gradient on scroll 
+- [x] Rework contact copy
+- [x] Add Bsky Link
 - [x] Look into Hugo compression [Hugo Doc](https://gohugo.io/hugo-pipes/postprocess/)
 - [x] Create scripts for tailwind dev and build
 - [x] Fix header middle spacing
