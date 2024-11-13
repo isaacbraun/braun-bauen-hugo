@@ -5,6 +5,8 @@ title = 'Braun Bauen'
 [module]
   [[module.imports]]
     path = 'github.com/hugomods/icons/vendors/feather'
+  [[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/font-awesome'
   [[module.mounts]]
     source = "assets"
     target = "assets"
@@ -17,3 +19,7 @@ title = 'Braun Bauen'
   [[module.mounts]]
     source = "node_modules"
     target = "assets"
+
+[params]
+  [params.icons]
+    throw_on_error = true
