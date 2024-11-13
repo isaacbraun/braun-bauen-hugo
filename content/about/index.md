@@ -17,7 +17,7 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 
 {{< resume-item heading="Website Development Manager" desc="Southern Adventist University" duration="November 2022 - Present" >}}
 {{% markdown %}}
-- Manage and develop the university's ~2500-page marketing website
+- Manage and develop the ~2500-page marketing website
 - Develop full-stack features within a content management system via HTML, CSS, JS, and PHP
 - Support and collaborate with over 150 content editors in varying departments
 - Lead a team of students through full-stack development and content management projects
@@ -34,9 +34,9 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 {{% /markdown %}}
 {{< /resume-item >}}
 
-{{< resume-item heading="Student Website Developer" desc="Southern Adventist University" duration="January 2020 – May 2022" >}}
+{{< resume-item heading="Website Development Intern" desc="Southern Adventist University" duration="January 2020 – May 2022" >}}
 {{% markdown %}}
-- Developed and implemented front-end features for the university's marketing website
+- Developed and implemented front-end features for the marketing website
 - Provided CMS training and assistance to content editors
 - Stitched together campus virtual tours from panoramic photos using 3DVista
 {{% /markdown %}}
