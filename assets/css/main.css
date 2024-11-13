@@ -446,7 +446,7 @@ video {
   display: none;
 }
 
-a {
+a, .bauen-prose a {
   color: currentColor;
   text-underline-offset: 2px;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
@@ -455,9 +455,16 @@ a {
   --tw-prose-links: text-current;
 }
 
-a:hover {
+a:hover, .bauen-prose a:hover {
   --tw-text-opacity: 1;
   color: rgb(7 130 68 / var(--tw-text-opacity));
+}
+
+@media print {
+  a, .bauen-prose a {
+    font-weight: 400;
+    text-decoration-line: none;
+  }
 }
 
 *, ::before, ::after {
