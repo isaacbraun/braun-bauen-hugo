@@ -1,4 +1,7 @@
 github.com/hugomods/icons v0.6.3 h1:2Ra6NU2GOeVvz8vowLq/OZCTzxqhq84MA0TICRBVxeY=
 github.com/hugomods/icons v0.6.3/go.mod h1:cIkSvK6W0q6N4U6n9KGz+QfRWQXAW0INd+1P31gPNGg=
+github.com/hugomods/icons v0.6.5 h1:vuaBlVO/MTsQNir4JWvPazjmtMMWG55Lif6VHCmd7KI=
 github.com/hugomods/icons/vendors/feather v0.2.4 h1:SFjH2NEf9vubsywL4q8r3fdNt9AGgbVx8HNFNupYEPM=
 github.com/hugomods/icons/vendors/feather v0.2.4/go.mod h1:pg/NX0ocg9gshlJ9FQN4ksqatpZ35sxprS5/I6Y52os=
+github.com/hugomods/icons/vendors/font-awesome v0.6.9 h1:ZpnyXeCOa9n7NBVURSRIZuGZykz80udHT8yxM+RE6NQ=
+github.com/hugomods/icons/vendors/font-awesome v0.6.9/go.mod h1:YPxdyI0WHuZfvwNeG8ADHXwnWmWIuu3PqiYGz8q9Skw=
