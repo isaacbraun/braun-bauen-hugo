@@ -79,8 +79,9 @@ label="Open Quaker Earthcare Witness' website in a new tab" >}}
 
 {{< section-header title="Work With Us" id="contact" padding="all" >}}
 {{% prose classes="max-w-none" %}}
-From minor fixes to large projects, we are excited to take on challenges and would love to hear from you!\
-We specialize in website development but feel free to reach out with any non-web questions or ideas.
+From building small features to bootstrapping entire projects, we are excited to take on challenges and would love to hear from you!\
+While we have expertise in website development, please feel free to reach out with any general development questions or ideas.\
+We look forward to helping convert your ideas into efficient and user-exciting experiences.
 
 Email us at [contact@braunbauen.com](mailto:contact@braunbauen.com "Email Braun Bauen"). 
 {{% /prose %}}
