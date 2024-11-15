@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $hash := dict "vendor" "feather" "name" "hash" "className" "text-green-600 hidden sm:block" }}
 {{ $pages := where site.RegularPages "Type" "blog" }}
-<main class="bauen-prose">
+<main class="content-page bauen-prose">
   <h1 class="mb-0 flex flex-row flex-nowrap gap-0.5 text-balance">
     {{ partial "icons/icon" $hash }}
     <span>{{ .Title }}</span>

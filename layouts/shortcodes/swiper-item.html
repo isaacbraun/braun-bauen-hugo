@@ -1,7 +1,7 @@
 <swiper-item class="swiper-slide !h-auto max-w-[400px]">
   {{ $link := .Get "link" }}
   {{ if $link }}
-  <a class="block h-full rounded-lg bg-green-200 border-4 border-green-200 overflow-hidden" href="{{ $link }}" aria-label="{{ .Get "label" }}" target="_blank">
+  <a class="block h-full rounded-lg bg-green-200 border-4 border-green-200 overflow-hidden" href="{{ $link }}" aria-label="{{ .Get "label" }}">
   {{ else }}
   <div class="block h-full rounded-lg bg-green-200 border-4 border-green-200 overflow-hidden">
   {{ end }}

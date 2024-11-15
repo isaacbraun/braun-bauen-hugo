@@ -1,0 +1,93 @@
+{{ define "main" }}
+{{ $hash := dict "vendor" "feather" "name" "hash" "className" "text-green-600 hidden sm:block" }}
+{{ $close := dict "vendor" "feather" "name" "x" "className" "" }}
+<main class="content-page" x-data="{ maxSrc: '', maxAlt: '', setAttributes(el) { this.maxSrc = el.src; this.maxAlt = el.alt; } }">
+  <dialog id="imageDialog" class="m-auto p-8 bg-transparent">
+    <button autofocus aria-label="Close the maximized image" onclick="imageDialog.close()">
+      {{ partial "icons/icon" $close }}
+    </button>
+    <img class="object-cover rounded" :src="maxSrc" :alt="maxAlt" />
+  </dialog>
+
+  <article>
+    <section class="bauen-prose">
+      <h1 class="mb-0 flex flex-row flex-nowrap gap-0.5 text-balance">
+        {{ partial "icons/icon" $hash }}
+        <span>{{ .Title }}</span>
+      </h1>
+      <p class="mt-2 pb-2 pl-1 text-gray-500 border-b-2 rounded-sm border-green-600">
+        Client | {{ .Param "client" }}
+      </p>
+    </section>
+
+    <section class="bg-gray-200 rounded p-3 flex flex-row gap-3">
+      {{ if .Param "image_1" }}
+        {{ $src := .Param "image_1" }}
+        {{ $alt := .Param "image_1_alt" }}
+        {{ $resize := images.Process "webp q100 resize 1000x" }}
+        {{ with resources.Get $src }}
+          {{ with .Filter $resize }}
+          <img
+            class="object-cover rounded h-full flex-1 hover:cursor-zoom-in"
+            alt="{{ $alt }}"
+            width="500"
+            src="{{ .RelPermalink }}"
+            @mouseenter="setAttributes($el)"
+            @click="imageDialog.showModal()"
+          />
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      <div class="flex flex-col gap-3">
+        {{ if .Param "image_2" }}
+          {{ $src := .Param "image_2" }}
+          {{ $alt := .Param "image_2_alt" }}
+          {{ $resize := images.Process "webp q100 resize 500x" }}
+          {{ with resources.Get $src }}
+            {{ with .Filter $resize }}
+            <img
+              class="object-cover rounded h-full flex-1 hover:cursor-zoom-in"
+              alt="{{ $alt }}"
+              width="250"
+              src="{{ .RelPermalink }}"
+              @mouseenter="setAttributes($el)"
+              @click="imageDialog.showModal()"
+            />
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{ if .Param "image_3" }}
+          {{ $src := .Param "image_3" }}
+          {{ $alt := .Param "image_3_alt" }}
+          {{ $resize := images.Process "webp q100 resize 500x" }}
+          {{ with resources.Get $src }}
+            {{ with .Filter $resize }}
+            <img
+              class="object-cover rounded h-full flex-1 hover:cursor-zoom-in"
+              alt="{{ $alt }}"
+              width="250"
+              src="{{ .RelPermalink }}"
+              @mouseenter="setAttributes($el)"
+              @click="imageDialog.showModal()"
+            />
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </section>
+
+    <section class="bauen-prose">
+      {{ .Content }}
+    </section>
+
+    <a
+      class="button-dark" 
+      href='{{ .Param "link" }}'
+      aria-label='{{ .Param "label" }}'
+      target="_blank"
+    >
+        <span>View it Live</span>
+    </a>
+  </article>
+</main>
+{{ end }}

@@ -1077,6 +1077,33 @@ a:hover, .bauen-prose a:hover {
   margin-bottom: 0;
 }
 
+.content-page {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  max-width: 80ch;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .content-page {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media print {
+  .content-page {
+    margin: 0px;
+    min-height: 0px;
+    max-width: none;
+    padding: 0px;
+  }
+}
+
 .bauen-prose {
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -1580,14 +1607,7 @@ a:hover, .bauen-prose a:hover {
 }
 
 .bauen-prose {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 100vh;
   max-width: 80ch;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 @media print {
@@ -1870,19 +1890,8 @@ a:hover, .bauen-prose a:hover {
   line-height: 1.75rem;
 }
 
-@media (min-width: 768px) {
-  .bauen-prose {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-  }
-}
-
 @media print {
   .bauen-prose {
-    margin: 0px;
-    min-height: 0px;
-    max-width: none;
-    padding: 0px;
     line-height: 1.5;
   }
 
@@ -1987,6 +1996,26 @@ a:hover, .bauen-prose a:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 248 243 / var(--tw-bg-opacity));
+}
+
+.button *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 248 243 / var(--tw-bg-opacity));
+}
+
+.button::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 248 243 / var(--tw-bg-opacity));
+}
+
+.button::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 248 243 / var(--tw-bg-opacity));
+}
+
 .button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(7 130 68 / var(--tw-bg-opacity));
@@ -2016,6 +2045,41 @@ a:hover, .bauen-prose a:hover {
 
 @media (min-width: 640px) {
   .button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.button-dark {
+  display: flex;
+  height: 41px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(7 130 68 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 130 68 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Space Mono, monospace;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-dark:hover {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(7 130 68 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .button-dark {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -2055,6 +2119,14 @@ a:hover, .bauen-prose a:hover {
 
 .m-0 {
   margin: 0px;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-2 {
@@ -2161,6 +2233,10 @@ a:hover, .bauen-prose a:hover {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2196,6 +2272,10 @@ a:hover, .bauen-prose a:hover {
 
 .max-w-screen-xl {
   max-width: 1280px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .scale-90 {
@@ -2348,6 +2428,11 @@ a:hover, .bauen-prose a:hover {
   border-bottom-color: rgb(0 159 79 / var(--tw-border-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-green-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(237 248 243 / var(--tw-bg-opacity));
@@ -2362,6 +2447,14 @@ a:hover, .bauen-prose a:hover {
   background-color: rgb(255 255 255 / 0.8);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-none {
+  background-image: none;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2371,8 +2464,24 @@ a:hover, .bauen-prose a:hover {
   padding: 0px;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .\!px-2 {
@@ -2694,6 +2803,10 @@ swiper-main .swiper-button-prev.swiper-button-disabled {
 .selection\:text-white::selection {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:cursor-zoom-in:hover {
+  cursor: zoom-in;
 }
 
 .hover\:text-green-600:hover {

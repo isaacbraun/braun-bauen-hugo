@@ -25,7 +25,7 @@ title="Curriculum Catalog"
 client="Southern Adventist University"
 src="img/portfolio/sau-catalog.jpg"
 alt="Southern Adventist University's Online Catalog System, specifically a view of all programs"
-link="https://www.southern.edu/catalog/undergraduate.html#/programs"
+link="/work/catalog"
 label="Open Southern Adventist University's online catalog in a new tab" >}}
 {{< /swiper-item >}}
 
