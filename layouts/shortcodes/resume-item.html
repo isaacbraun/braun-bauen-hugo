@@ -10,7 +10,7 @@
       {{ end }}
       <p class="m-0 font-semibold">{{ .Get "desc" }}{{ if .Get "descAfter" }}<span class="font-normal">&nbsp;|&nbsp;{{ .Get "descAfter" }}</span>{{ end }}</p>
     </div>
-    <p class="m-0 text-sm text-gray-500">{{ .Get "duration" }}</p>
+    <p class="m-0 text-sm print:text-xs text-gray-500">{{ .Get "duration" }}</p>
   </div>
   <div>{{ .Inner }}</div>
 </section>
