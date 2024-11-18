@@ -1,17 +1,24 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
-  content: ["./content/*.md", "./content/**/*.md", "./layouts/*.html", "./layouts/**/*.html", "./public/*.html", "./public/**/*.html"],
+  content: [
+    "./content/*.md",
+    "./content/**/*.md",
+    "./layouts/*.html",
+    "./layouts/**/*.html",
+    "./public/*.html",
+    "./public/**/*.html",
+  ],
   theme: {
     fontFamily: {
-      'sans': ["Space Grotesk", "sans-serif"],
-      'mono': ["Space Mono", "monospace"],
+      sans: ["Space Grotesk", "sans-serif"],
+      mono: ["Space Mono", "monospace"],
     },
     colors: {
-      inherit: 'inherit',
-      transparent: 'transparent',
-      current: 'currentColor',
+      inherit: "inherit",
+      transparent: "transparent",
+      current: "currentColor",
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
@@ -27,13 +34,33 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'smooth20': '0px 0.6px 0.8px rgba(0, 0, 0, 0.014), 0px 1.3px 2px rgba(0, 0, 0, 0.02), 0px 2.5px 3.8px rgba(0, 0, 0, 0.025), 0px 4.5px 6.7px rgba(0, 0, 0, 0.03), 0px 8.4px 12.5px rgba(0, 0, 0, 0.036), 0px 20px 30px rgba(0, 0, 0, 0.05)',
-        'smooth40': '0px 1.1px 1.1px rgba(0, 0, 0, 0.014), 0px 2.7px 2.7px rgba(0, 0, 0, 0.02), 0px 5px 5px rgba(0, 0, 0, 0.025), 0px 8.9px 8.9px rgba(0, 0, 0, 0.03), 0px 16.7px 16.7px rgba(0, 0, 0, 0.036), 0px 40px 40px rgba(0, 0, 0, 0.05)',
+        smooth20:
+          "0px 0.6px 0.8px rgba(0, 0, 0, 0.014), 0px 1.3px 2px rgba(0, 0, 0, 0.02), 0px 2.5px 3.8px rgba(0, 0, 0, 0.025), 0px 4.5px 6.7px rgba(0, 0, 0, 0.03), 0px 8.4px 12.5px rgba(0, 0, 0, 0.036), 0px 20px 30px rgba(0, 0, 0, 0.05)",
+        smooth40:
+          "0px 1.1px 1.1px rgba(0, 0, 0, 0.014), 0px 2.7px 2.7px rgba(0, 0, 0, 0.02), 0px 5px 5px rgba(0, 0, 0, 0.025), 0px 8.9px 8.9px rgba(0, 0, 0, 0.03), 0px 16.7px 16.7px rgba(0, 0, 0, 0.036), 0px 40px 40px rgba(0, 0, 0, 0.05)",
+      },
+      typography: {
+        xs: {
+          css: {
+            fontSize: "0.75rem",
+            h1: {
+              fontSize: "1.5rem",
+            },
+            h2: {
+              fontSize: "1.25rem",
+            },
+            h3: {
+              fontSize: "1.1rem",
+            },
+            // You can customize other elements as needed
+            p: {
+              marginTop: "0.75rem",
+              marginBottom: "0.75rem",
+            },
+          },
+        },
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
-
+  plugins: [require("@tailwindcss/typography")],
+};

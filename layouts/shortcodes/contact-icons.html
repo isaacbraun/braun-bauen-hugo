@@ -1,14 +1,10 @@
 {{ $linkedIn := dict "vendor" "feather" "name" "linkedin" }}
 {{ $mail := dict "vendor" "feather" "name" "mail" }}
 {{ $github := dict "vendor" "feather" "name" "github" }}
-{{ $twitter := dict "vendor" "feather" "name" "twitter" }} 
 {{ $bsky := dict "vendor" "font-awesome-brands" "name" "bluesky" }} 
+{{ $twitter := dict "vendor" "feather" "name" "twitter" }} 
 
 <section class="print:hidden flex flex-row gap-3 text-gray-500">
-  <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun">
-    <span class="sr-only">GitHub</span>
-    {{ partial "icons/icon" $github }}
-  </a>
   <button x-data="{ message: 'Copy Email' }"
     @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');"
     @mouseleave="message = 'Copy Email'"
@@ -21,6 +17,10 @@
   <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/isaac-braun-656998235">
     <span class="sr-only">LinkedIn</span>
     {{ partial "icons/icon" $linkedIn }}
+  </a>
+  <a aria-label="GitHub" target="_blank" href="https://github.com/isaacbraun">
+    <span class="sr-only">GitHub</span>
+    {{ partial "icons/icon" $github }}
   </a>
   <a aria-label="Bluesky" target="_blank" href="https://bsky.app/profile/braunbauen.com">
     <span class="sr-only">Bluesky</span>
