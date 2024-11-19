@@ -22,7 +22,7 @@ and at our core, we are committed to "bauen" products with excellence and innova
 
 {{< swiper-item
 title="Curriculum Catalog"
-client="Southern Adventist University"
+client="Vue.js / TypeScript Web App"
 src="img/portfolio/sau-catalog.jpg"
 alt="Southern Adventist University's Online Catalog System, specifically a view of all programs"
 link="https://www.southern.edu/catalog/undergraduate.html#/programs"
@@ -30,8 +30,17 @@ label="Open Southern Adventist University's online catalog in a new tab" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item
-title="Start-to-Finish Website"
-client="Chattanooga Tongue Tie Center"
+title="Iter"
+client="Weather Browsing & Flight Planning App"
+src="img/portfolio/iter-forecasted.jpg"
+alt="A map interface with weather details from each airport displayed in a graphical format (station model)"
+link="https://github.com/isaacbraun/Iter"
+label="Open the Iter GitHub repository in a new tab" >}}
+{{< /swiper-item >}}
+
+{{< swiper-item
+title="Chattanooga Tongue Tie Center"
+client="WordPress / Flynt Website"
 src="img/portfolio/cttc-home.jpg"
 alt="Chattanooga Tongue Tie Center's Website Homepage"
 link="https://tonguetiechattanooga.com/"
@@ -39,8 +48,8 @@ label="Open Chattanooga Tongue Tie Center's website in a new tab" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item 
-title="Search/Filter System" 
-client="Southern Adventist University" 
+title="Search / Filter System" 
+client="React.js Web App" 
 src="img/portfolio/sau-endowments.jpg"
 alt="Southern Adventist University's Scholarship Searching and Filtering System"
 link="https://www.southern.edu/advancement/development/named-endowments/index.html"
@@ -48,8 +57,8 @@ label="Open Southern Adventist University's scholarship searching and filtering 
 {{< /swiper-item >}}
 
 {{< swiper-item 
-title="Taxi Data Dashboard" 
-client="Personal Project" 
+title="Taxi Trip Cost / Time Dashboard" 
+client="Tableau Prep / Desktop" 
 src="img/portfolio/taxi-tableau.jpg"
 alt="A Tableau Dashboard showcasing NYC Taxi Trip Data in charts and numbers"
 link="https://bit.ly/braun-nyc-taxi"
@@ -57,17 +66,8 @@ label="Open the NYC Taxi Trip Dashboard in a new tab" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item
-title="Accordion Component"
-client="Southern Adventist University"
-src="img/portfolio/sau-accordion.jpg"
-alt="Website accordion component with one item expanded"
-link="https://www.southern.edu/advancement/development/endowments.html#What%20Is%20An%20Endowment%3F"
-label="Open Southern Adventist University's Endowments page in a new tab to see the accordion component in action" >}}
-{{< /swiper-item >}}
-
-{{< swiper-item
-title="Wordpress Components"
-client="Quaker Earthcare Witness"
+title="Quaker Earthcare Witness"
+client="Custom Wordpress Components"
 src="img/portfolio/qew-home.jpg"
 alt="Screenshot of Southern Adventist University's Online Catalog System"
 link="https://quakerearthcare.org/"

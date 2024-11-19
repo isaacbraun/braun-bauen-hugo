@@ -8,7 +8,7 @@
   {{ if .Get "src" }}
     {{ $src := .Get "src" }}
     {{ $alt := .Get "alt" }}
-    {{ $resize := images.Process "webp q100 resize 1200x" }}
+    {{ $resize := images.Process "webp q100 fill 1200x900 center" }}
     {{ with resources.Get $src }}
       {{ with .Filter $resize }}
       <img class="object-cover" alt="{{ $alt }}" width="1200" height="900" src="{{ .RelPermalink }}" />
