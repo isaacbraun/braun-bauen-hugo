@@ -44,7 +44,7 @@ and developed custom shared page components using Flynt.
 
 {{< resume-item heading="Iter" desc="Weather Browsing & Flight Charting Mobile Application" duration="React Native / Expo" >}}
 {{% markdown %}}
-- A cross-platform mobile app using React Native and Expo offering pilots tools for browsing aviation weather data (METAR) and flight path charting based on weather conditions.
+- [A cross-platform mobile app](https://github.com/isaacbraun/Iter) using React Native and Expo offering pilots tools for browsing aviation weather data (METAR) and flight path charting based on weather conditions.
 - Displays current and forecasted weather data from every airport, fetched from a government API, in a graphical format.
 - Developed a custom flight path grading algorithm based on the route's weather to assist in flight planning decisions.
 - Utilized test-driven development principles with Jest for unit and module testing, achieving pass rates above 95%.
