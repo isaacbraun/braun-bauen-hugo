@@ -48,7 +48,7 @@ label="Open Chattanooga Tongue Tie Center's website in a new tab" >}}
 {{< /swiper-item >}}
 
 {{< swiper-item 
-title="Search/Filter System" 
+title="Search / Filter System" 
 client="React.js Web App" 
 src="img/portfolio/sau-endowments.jpg"
 alt="Southern Adventist University's Scholarship Searching and Filtering System"
@@ -57,7 +57,7 @@ label="Open Southern Adventist University's scholarship searching and filtering 
 {{< /swiper-item >}}
 
 {{< swiper-item 
-title="Taxi Trip Cost/Time Dashboard" 
+title="Taxi Trip Cost / Time Dashboard" 
 client="Tableau Prep / Desktop" 
 src="img/portfolio/taxi-tableau.jpg"
 alt="A Tableau Dashboard showcasing NYC Taxi Trip Data in charts and numbers"
