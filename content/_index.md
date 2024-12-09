@@ -1,15 +1,15 @@
 +++
 title = 'Home'
-description = 'Braun Bauen is a creative agency founded by website developer and creative Isaac Braun. Our mission is to build products and experiences that are fast, accessible, and intuitive to use. Contact us at contact@braunbauen.com.'
+description = 'Braun Bauen is a creative agency founded by software engineer and creative Isaac Braun. Our mission is to build products and experiences that are fast, accessible, and intuitive to use. Contact us at contact@braunbauen.com.'
 date = 2024-07-07T18:47:34-04:00
 draft = false
 +++
 
 {{< section-header title="Who We Are" padding="all" >}}
 {{% prose classes="max-w-none" %}}
-Braun Bauen is a creative agency founded by website developer and creative Isaac Braun.
+Braun Bauen is a creative agency founded by software engineer and creative Isaac Braun.
 Our mission is to build products and experiences that are fast, accessible, and intuitive to use.
-We discovered website development and design to be a fantastic pairing with our mission due to its universal and flexible nature.
+We discovered website and software development to be a fantastic pairing with our mission due to its universal and flexible nature.
 However, as creatives, we are always open to utilizing other mediums to tackle unique and challenging projects.
 This mentality led to the selection of our brand name since "bauen" means "build" in the German language,
 and at our core, we are committed to "bauen" products with excellence and innovation.
@@ -80,7 +80,7 @@ label="Open Quaker Earthcare Witness' website in a new tab" >}}
 {{< section-header title="Work With Us" id="contact" padding="all" >}}
 {{% prose classes="max-w-none" %}}
 From building small features to bootstrapping entire projects, we are excited to take on challenges and would love to hear from you!\
-While we have expertise in website development, please feel free to reach out with any general development questions or ideas.\
+While we have expertise in website development, please feel free to reach out with any software engineering questions or ideas.\
 We look forward to helping convert your ideas into efficient and user-exciting experiences.
 
 Email us at [contact@braunbauen.com](mailto:contact@braunbauen.com "Email Braun Bauen"). 
