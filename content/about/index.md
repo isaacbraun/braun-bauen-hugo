@@ -1,7 +1,7 @@
 ---
 layout: resume
 title: "About Isaac Braun"
-description: "A website developer and creative, Isaac Braun is the founder and leader of Braun Bauen."
+description: "A software engineer and creative, Isaac Braun is the founder and leader of Braun Bauen."
 date: 2024-11-12T22:35:34-04:00
 draft: false
 ---
