@@ -15,7 +15,7 @@ With a strong sense of responsibility for my work and collaborators, I am commit
 
 ## Experience
 
-{{< resume-item heading="Software Engineer" desc="Southern Adventist University" duration="January 2020 - Present" >}}
+{{< resume-item heading="Software Engineer" desc="Southern Adventist University" duration="January 2020 - December 2024" >}}
 {{% markdown %}}
 - Delivered a Vue.js [curriculum catalog front-end app](https://www.southern.edu/catalog/undergraduate.html#/programs) by
 collaborating closely with the design lead and RESTful API team, providing faculty and students with easy access to critical
