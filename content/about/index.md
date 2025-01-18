@@ -7,13 +7,23 @@ draft: false
 ---
 
 ## Profile
-I am an organized and thoughtful creative dedicated to crafting intuitive and beautiful user experiences.
-My motivation comes from seeing a project to completion and knowing I have made somebody's experience better.
-I thrive in a collaborative environment and find fulfillment in helping my creations and those around me realize their full potential.
-With a strong sense of responsibility for my work and collaborators, I am committed to delivering high-quality and detailed solutions.
+As a passionate and detail-oriented individual, I have found a love for crafting intuitive and beautiful experiences through software engineering.
+The feeling of seeing a project through to completion helps fuel me and I find fulfillment knowing my work will make an impact in somebody's life.
+I thrive when collaborating with and learning from others, and it brings me joy when I can help anyone realize their full potential.
+In all my work, I have a strong sense of responsibility and am committed to delivering quality, polished, and detailed solutions.
 {{< contact-icons >}}
 
 ## Experience
+{{< resume-item heading="Freelance Software Engineer" desc="Braun Bauen" duration="June 2020 - Present" >}}
+{{% markdown %}}
+- Developed a [search and filter interface](https://www.southern.edu/advancement/development/named-endowments/index.html) for university endowments using React.js,
+providing donors and students with clear information and UX to find the right endowment.
+- Streamlined a customer onboarding flow by integrating the client's API directly and using automated redirects through PHP and JavaScript,
+reducing friction by ~80%.
+- Built and managed a [new WordPress website](https://www.tonguetiechattanooga.com), assisted the client with ideation, produced design,
+and developed custom shared page components using Flynt.
+{{% /markdown %}}
+{{< /resume-item >}}
 
 {{< resume-item heading="Software Engineer" desc="Southern Adventist University" duration="January 2020 - December 2024" >}}
 {{% markdown %}}
@@ -24,19 +34,8 @@ information and creating a more interesting user experience.
 optimizing video implementations, and ensuring CDN usage for resources.
 - Led and mentored a team of interns during the development of a Vue.js calendar web app and 5 shared components,
 increasing accessibility to information and decreasing clicks by 55%.
-- Created a more efficient system by refactoring templates to be composable and reusable and unifying JavaScript libraries.
+- Created a more efficient system by refactoring page templates to be composable and unifying JavaScript libraries.
 - Supported, trained, and collaborated with over 150 content editors to maintain the ~2,500-page [marketing website](https://www.southern.edu).
-{{% /markdown %}}
-{{< /resume-item >}}
-
-{{< resume-item heading="Freelance Software Engineer" desc="Braun Bauen" duration="June 2020 - Present" >}}
-{{% markdown %}}
-- Developed a [search and filter interface](https://www.southern.edu/advancement/development/named-endowments/index.html) for university endowments using React.js,
-providing donors and students with clear information and UX to find the right endowment.
-- Streamlined a customer onboarding flow by integrating the client's API directly and using automated redirects through PHP and JavaScript,
-reducing friction by ~80%.
-- Built and managed a [new WordPress website](https://www.tonguetiechattanooga.com), assisted the client with ideation, produced design,
-and developed custom shared page components using Flynt.
 {{% /markdown %}}
 {{< /resume-item >}}
 
@@ -59,7 +58,7 @@ and developed custom shared page components using Flynt.
 
 ## Skills
 
-**Languages:** TypeScript, JavaScript, PHP, Python, HTML, CSS, SQL, C++\
+**Languages:** TypeScript/JavaScript, PHP, Python, HTML, CSS, SQL\
 **Technologies:** Git, AWS, RESTful APIs, CMS (e.g. WordPress)\
-**Frameworks:** Vue.js, React.js, React Native, Expo, Jest, Tailwind CSS\
-**Other:** Technical Writing, Photography, Choral Performance, Piano, Woodworking 
+**Frameworks:** Vue.js, React.js, React Native, Expo, Tailwind CSS, Jest\
+**Other:** Photography, Choral Performance, Piano, Woodworking 
