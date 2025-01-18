@@ -2022,10 +2022,6 @@ a:hover, .bauen-prose a:hover {
   flex-wrap: nowrap;
 }
 
-.content-between {
-  align-content: space-between;
-}
-
 .items-center {
   align-items: center;
 }
@@ -2209,10 +2205,6 @@ a:hover, .bauen-prose a:hover {
 
 .pt-3 {
   padding-top: 0.75rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-center {
