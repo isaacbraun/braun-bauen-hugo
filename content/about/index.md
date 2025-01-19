@@ -8,9 +8,10 @@ draft: false
 
 ## Profile
 As a passionate and detail-oriented individual, I have found a love for crafting intuitive and beautiful experiences through software engineering.
-The feeling of seeing a project through to completion helps fuel me and I find fulfillment knowing my work will make an impact in somebody's life.
-I thrive when collaborating with and learning from others, and it brings me joy when I can help anyone realize their full potential.
-In all my work, I have a strong sense of responsibility and am committed to delivering quality, polished, and detailed solutions.
+The feeling of putting in hard work and seeing a beautiful end product is what fuels me,
+and I find even more fullfillment if my work makes a positive impact in someone's life.
+I enjoy collaborating with and learning from others and find joy when I can help teach or develop someone into a better version of themselves.
+In all I do, I value responsibility and honestly highly and am committed to delivering quality, polished, and detailed solutions.
 {{< contact-icons >}}
 
 ## Experience
