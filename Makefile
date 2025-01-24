@@ -14,8 +14,8 @@ server:
 	@echo "Running Hugo Server"
 	@hugo server -D
 
-tw-watch:
+tw:
 	@echo "Watching for Tailwind changes"
-	@npx tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch
+	@npx @tailwindcss/cli -i ./assets/css/input.css -o ./assets/css/main.css --watch
 
-.PHONY: all run build server tw-watch
+.PHONY: all run build server tw
