@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ $hash := dict "vendor" "feather" "name" "hash" "className" "text-green-600 hidden sm:block" }}
 {{ $pages := where site.RegularPages "Type" "blog" }}
-<main class="bauen-prose">
+<main class="prose">
   <h1 class="mb-0 flex flex-row flex-nowrap gap-0.5 text-balance">
     {{ partial "icons/icon" $hash }}
     <span>{{ .Title }}</span>
@@ -13,7 +13,7 @@
       {{ end }}
     {{ end }}
   </h1>
-  <aside class="flex flex-row gap-3 mt-2 mb-6 pb-2 pl-1 text-gray-500 border-b-2 rounded-sm border-green-600">
+  <aside class="flex flex-row gap-3 mt-2 mb-6 pb-2 pl-1 text-gray-500 border-b-2 rounded-xs border-green-600">
     <ul class="flex flex-row gap-3 m-0 not-prose list-none">
       {{ range .Site.Taxonomies.tags }}
         <li><a class="underline" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="bauen-prose">
+<main class="prose">
   <h1 class="mb-0 print:mt-0 flex flex-row flex-nowrap items-center gap-0.5">
     {{ $resize := images.Process "webp q100 resize x25" }}
     {{ with resources.Get "img/BB_Logo_Mark_Color_NoPadding.png" }}
@@ -12,14 +12,14 @@
     {{ partial "icons/icon" $hash }}
     <span class="print:hidden">{{ .Title }}</span>
     <span class="hidden print:block">Isaac Braun</span>
-    <button onclick="print()" aria-label="Print Resume" class="hidden sm:block button !px-2 !py-1 !ml-auto print:hidden">
+    <button onclick="print()" aria-label="Print Resume" class="hidden sm:block button px-2! py-1! ml-auto! print:hidden">
       <span class="sr-only">Print Resume</span>
       {{ $print := dict "vendor" "feather" "name" "printer"
       "className" "h-5" }}
       {{ partial "icons/icon" $print }}
     </button>
   </h1>
-  <p class="mt-2 pb-2 pl-1 print:pl-0 print:mt-0 text-gray-500 border-b-2 rounded-sm border-green-600">
+  <p class="mt-2 pb-2 pl-1 print:pl-0 print:mt-0 text-gray-500 border-b-2 rounded-xs border-green-600">
     <span class="print:hidden">{{ .Description }}</span>
     <span class="hidden print:block text-gray-700">
       <a class="no-underline" href="mailto:isaac@braunbauen.com" title="Email Isaac">isaac@braunbauen.com</a> | 
