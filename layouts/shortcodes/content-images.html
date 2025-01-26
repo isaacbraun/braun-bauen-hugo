@@ -9,7 +9,7 @@
       {{ $resize := images.Process "webp q100" }}
       {{ with resources.Get $src }}
         {{ with .Filter $resize }}
-          <img class="rounded shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+          <img class="rounded-sm shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
         {{ end }}
       {{ end }}
     {{ end }}
@@ -20,7 +20,7 @@
         {{ $resize := images.Process "webp q100" }}
         {{ with resources.Get $src }}
           {{ with .Filter $resize }}
-            <img class="rounded shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+            <img class="rounded-sm shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
           {{ end }}
         {{ end }}
       {{ end }}
@@ -30,7 +30,7 @@
         {{ $resize := images.Process "webp q100" }}
         {{ with resources.Get $src }}
           {{ with .Filter $resize }}
-            <img class="rounded shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
+            <img class="rounded-sm shadow-md" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" />
           {{ end }}
         {{ end }}
     </div>
