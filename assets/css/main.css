@@ -609,9 +609,6 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
   }
@@ -654,32 +651,11 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .my-0 {
-    margin-block: calc(var(--spacing) * 0);
-  }
-  .my-2 {
-    margin-block: calc(var(--spacing) * 2);
-  }
-  .my-3 {
-    margin-block: calc(var(--spacing) * 3);
-  }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
-  }
-  .my-6 {
-    margin-block: calc(var(--spacing) * 6);
-  }
-  .my-7 {
-    margin-block: calc(var(--spacing) * 7);
-  }
-  .my-16 {
-    margin-block: calc(var(--spacing) * 16);
+  .-ms-1 {
+    margin-inline-start: calc(var(--spacing) * -1);
   }
   .-mt-5 {
     margin-top: calc(var(--spacing) * -5);
-  }
-  .mt-0 {
-    margin-top: calc(var(--spacing) * 0);
   }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
@@ -687,14 +663,8 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
   }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
@@ -708,14 +678,8 @@
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
-  .mb-3 {
-    margin-bottom: calc(var(--spacing) * 3);
-  }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
-  }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
   }
   .mb-24 {
     margin-bottom: calc(var(--spacing) * 24);
@@ -862,12 +826,6 @@
   .resize {
     resize: both;
   }
-  .list-decimal {
-    list-style-type: decimal;
-  }
-  .list-disc {
-    list-style-type: disc;
-  }
   .list-none {
     list-style-type: none;
   }
@@ -951,9 +909,9 @@
     border-style: var(--tw-border-style);
     border-width: 4px;
   }
-  .border-s-4 {
-    border-inline-start-style: var(--tw-border-style);
-    border-inline-start-width: 4px;
+  .border-8 {
+    border-style: var(--tw-border-style);
+    border-width: 8px;
   }
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
@@ -972,8 +930,8 @@
   .border-green-600 {
     border-color: var(--color-green-600);
   }
-  .border-s-gray-200 {
-    border-inline-start-color: var(--color-gray-200);
+  .border-transparent {
+    border-color: transparent;
   }
   .clicked {
     &.tooltip {
@@ -1029,9 +987,6 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
-  .ps-4 {
-    padding-inline-start: calc(var(--spacing) * 4);
-  }
   .pt-3 {
     padding-top: calc(var(--spacing) * 3);
   }
@@ -1049,10 +1004,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-4xl {
     font-size: var(--text-4xl);
@@ -1074,18 +1025,6 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-xs {
-    font-size: var(--text-xs);
-    line-height: var(--tw-leading, var(--text-xs--line-height));
-  }
-  .leading-7 {
-    --tw-leading: calc(var(--spacing) * 7);
-    line-height: calc(var(--spacing) * 7);
-  }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
@@ -1093,10 +1032,6 @@
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
-  }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
   }
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
@@ -1150,9 +1085,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .underline-offset-2 {
-    text-underline-offset: 2px;
-  }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1168,9 +1100,6 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .filter {
-    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -1212,6 +1141,11 @@
   }
   .\[--swiper-navigation-size\:calc\(0\.25vw\+1\.5rem\)\] {
     --swiper-navigation-size: calc(0.25vw + 1.5rem);
+  }
+  .not-print\:mt-\[1px\] {
+    @media not print {
+      margin-top: 1px;
+    }
   }
   .selection\:bg-green-200 {
     & *::selection {
@@ -1312,6 +1246,11 @@
       margin-top: calc(var(--spacing) * 32);
     }
   }
+  .print\:m-0 {
+    @media print {
+      margin: calc(var(--spacing) * 0);
+    }
+  }
   .print\:my-0 {
     @media print {
       margin-block: calc(var(--spacing) * 0);
@@ -1335,6 +1274,11 @@
   .print\:hidden {
     @media print {
       display: none;
+    }
+  }
+  .print\:p-8 {
+    @media print {
+      padding: calc(var(--spacing) * 8);
     }
   }
   .print\:pt-0 {
@@ -1394,7 +1338,7 @@
     :where(p) {
       margin-block: calc(var(--spacing) * 5);
       @media print {
-        margin-block: calc(var(--spacing) * 2);
+        margin-block: calc(var(--spacing) * 1);
       }
     }
     :where(a) {
@@ -1402,6 +1346,9 @@
       font-weight: var(--font-weight-medium);
       text-decoration-line: underline;
       text-underline-offset: 2px;
+    }
+    :where(strong) {
+      color: var(--color-gray-800);
     }
     :where(blockquote) {
       margin-block: calc(var(--spacing) * 7);
@@ -1438,22 +1385,26 @@
       font-weight: var(--font-weight-bold);
       color: var(--color-gray-500);
       @media print {
-        margin-bottom: calc(var(--spacing) * 2);
+        margin-top: calc(var(--spacing) * 3);
       }
       @media print {
-        font-size: var(--text-xl);
-        line-height: var(--tw-leading, var(--text-xl--line-height));
+        margin-bottom: calc(var(--spacing) * 0);
+      }
+      @media print {
+        font-size: var(--text-base);
+        line-height: var(--tw-leading, var(--text-base--line-height));
       }
     }
     :where(h3) {
       margin-top: calc(var(--spacing) * 6);
-      margin-bottom: calc(var(--spacing) * 1);
+      margin-bottom: calc(var(--spacing) * 0);
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
       --tw-font-weight: var(--font-weight-semibold);
       font-weight: var(--font-weight-semibold);
       @media print {
-        font-size: 1.1rem;
+        font-size: var(--text-sm);
+        line-height: var(--tw-leading, var(--text-sm--line-height));
       }
     }
     :where(h4) {
@@ -1479,7 +1430,7 @@
         color: var(--color-gray-300);
       }
       @media print {
-        margin-top: calc(var(--spacing) * 0);
+        margin-top: calc(var(--spacing) * 1);
       }
       @media print {
         margin-bottom: calc(var(--spacing) * 2);
@@ -1668,10 +1619,6 @@ swiper-main .swiper-button-next.swiper-button-disabled, swiper-main .swiper-butt
   inherits: false;
   initial-value: skewY(0);
 }
-@property --tw-leading {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1685,39 +1632,7 @@ swiper-main .swiper-button-next.swiper-button-disabled, swiper-main .swiper-butt
   inherits: false;
   initial-value: solid;
 }
-@property --tw-blur {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-brightness {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-contrast {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-grayscale {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-hue-rotate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-invert {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-opacity {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-saturate {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-sepia {
+@property --tw-leading {
   syntax: "*";
   inherits: false;
 }
