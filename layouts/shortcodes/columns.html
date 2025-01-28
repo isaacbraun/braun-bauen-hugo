@@ -1,7 +1,9 @@
-{{ if .IsNamedParams }}
+{{ if .Get "flex" }}
+<section class='flex gap-2 sm:gap-12 flex-wrap flex-row {{ if .Get "pad" }}ms-1{{ end }}'>
+{{ else if .Get "colNum" }}
 <section class='grid gap-2 grid-cols-1 sm:grid-cols-{{ if .Get "colNum" }}{{ .Get "colNum" }}{{ else }}2{{ end }}'>
 {{ else }}
-<section class="grid gap-2 grid-cols-1 sm:grid-cols-{{ if gt (len .Params) 0 }}{{ .Get 0 }}{{ else }}2{{ end }}">
+<section class="grid gap-2 grid-cols-1 sm:grid-cols-2">
 {{ end }}
     {{ .Inner }}
 </section>
