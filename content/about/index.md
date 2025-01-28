@@ -56,7 +56,7 @@ increasing accessibility and decreasing clicks by **55%**.
 {{% /markdown %}}
 {{< /resume-item >}}
 
-{{< columns >}}
+{{< columns flex="true" pad="true" >}}
 {{< column-item >}}
 {{% markdown %}}
 ## Education
