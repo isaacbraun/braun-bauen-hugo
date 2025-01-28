@@ -1,16 +1,24 @@
 {{ $hash := dict "vendor" "feather" "name" "hash" "className" "text-green-600" }}
+{{ $open := dict "vendor" "feather" "name" "external-link" "className" "text-current transition:colors" }}
 <section class="{{ if .Get "heading" }}pt-3 {{ end }}print:pt-0">
   <div class="flex flex-col sm:flex-row justify-between sm:gap-3">
     <div>
       {{ if .Get "heading" }}
-        <h3 class="mt-1 mb-0 flex flex-row flex-nowrap items-center gap-0.5">
+        <h3 class="m-0 flex flex-row flex-nowrap items-center gap-0.5">
           {{ partial "icons/icon" $hash }}
           {{ .Get "heading" }}
+          {{ if .Get "link" }}
+          <a class="text-sm print:text-xs border-8 border-transparent -ms-1 not-print:mt-[1px] hover:text-green-600" title="Open the {{ .Get "heading" }} project in a new tab" href="{{ .Get "link" }}" target="_blank">
+            {{ partial "icons/icon" $open }}
+          </a>
+          {{ end }}
         </h3>
       {{ end }}
-      <p class="m-0 font-semibold">{{ .Get "desc" }}{{ if .Get "descAfter" }}<span class="font-normal">&nbsp;|&nbsp;{{ .Get "descAfter" }}</span>{{ end }}</p>
+      {{ if .Get "desc" }}
+        <p class="m-0 font-semibold">{{ .Get "desc" }}{{ if .Get "descAfter" }}<span class="font-normal">&nbsp;|&nbsp;{{ .Get "descAfter" }}</span>{{ end }}</p>
+      {{ end }}
     </div>
-    <p class="m-0 text-sm print:text-xs text-gray-500">{{ .Get "duration" }}</p>
+    <p class="mt-1 mb-0 text-sm print:text-xs italic tracking-wide">{{ .Get "duration" }}</p>
   </div>
   <div>{{ .Inner }}</div>
 </section>
