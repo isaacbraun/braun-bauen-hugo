@@ -1,7 +1,7 @@
-/*! tailwindcss v4.0.0 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.1 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
-  :root {
+  :root, :host {
     --font-sans: "Space Grotesk", sans-serif;
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: "Space Mono", monospace;
@@ -645,9 +645,6 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
-  .mx-1 {
-    margin-inline: calc(var(--spacing) * 1);
-  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -835,9 +832,6 @@
   .list-none {
     list-style-type: none;
   }
-  .grid-flow-col-dense {
-    grid-auto-flow: column dense;
-  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -862,17 +856,8 @@
   .justify-between {
     justify-content: space-between;
   }
-  .justify-center {
-    justify-content: center;
-  }
   .justify-end {
     justify-content: flex-end;
-  }
-  .justify-evenly {
-    justify-content: space-evenly;
-  }
-  .justify-stretch {
-    justify-content: stretch;
   }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
@@ -1111,6 +1096,10 @@
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .shadow-smooth-20 {
+    --tw-shadow: 0px 0.6px 0.8px var(--tw-shadow-color, rgba(0, 0, 0, 0.014)), 0px 1.3px 2px var(--tw-shadow-color, rgba(0, 0, 0, 0.02)), 0px 2.5px 3.8px var(--tw-shadow-color, rgba(0, 0, 0, 0.025)), 0px 4.5px 6.7px var(--tw-shadow-color, rgba(0, 0, 0, 0.03)), 0px 8.4px 12.5px var(--tw-shadow-color, rgba(0, 0, 0, 0.036)), 0px 20px 30px var(--tw-shadow-color, rgba(0, 0, 0, 0.05));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-smooth-40 {
     --tw-shadow: 0px 1.1px 1.1px var(--tw-shadow-color, rgba(0, 0, 0, 0.014)), 0px 2.7px 2.7px var(--tw-shadow-color, rgba(0, 0, 0, 0.02)), 0px 5px 5px var(--tw-shadow-color, rgba(0, 0, 0, 0.025)), 0px 8.9px 8.9px var(--tw-shadow-color, rgba(0, 0, 0, 0.03)), 0px 16.7px 16.7px var(--tw-shadow-color, rgba(0, 0, 0, 0.036)), 0px 40px 40px var(--tw-shadow-color, rgba(0, 0, 0, 0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1159,16 +1148,6 @@
   }
   .\[--swiper-navigation-size\:calc\(0\.25vw\+1\.5rem\)\] {
     --swiper-navigation-size: calc(0.25vw + 1.5rem);
-  }
-  .\*\:w-fit {
-    :is(& > *) {
-      width: fit-content;
-    }
-  }
-  .\*\*\:w-fit {
-    :is(& *) {
-      width: fit-content;
-    }
   }
   .not-print\:mt-\[1px\] {
     @media not print {
@@ -1228,11 +1207,6 @@
       display: none;
     }
   }
-  .sm\:grid-flow-col-dense {
-    @media (width >= 40rem) {
-      grid-auto-flow: column dense;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1256,11 +1230,6 @@
   .sm\:gap-3 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 3);
-    }
-  }
-  .sm\:gap-8 {
-    @media (width >= 40rem) {
-      gap: calc(var(--spacing) * 8);
     }
   }
   .sm\:gap-12 {
