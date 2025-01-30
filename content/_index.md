@@ -41,7 +41,7 @@ label="Open the Iter GitHub repository in a new tab" >}}
 {{< swiper-item
 title="Chattanooga Tongue Tie Center"
 client="WordPress / Flynt Website"
-src="img/portfolio/cttc-home.jpg"
+src="img/portfolio/cttc-home.png"
 alt="Chattanooga Tongue Tie Center's Website Homepage"
 link="https://tonguetiechattanooga.com/"
 label="Open Chattanooga Tongue Tie Center's website in a new tab" >}}
