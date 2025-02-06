@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -648,8 +648,17 @@
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
+  .mx-4 {
+    margin-inline: calc(var(--spacing) * 4);
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-4 {
+    margin-block: calc(var(--spacing) * 4);
+  }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
   }
   .-ms-1 {
     margin-inline-start: calc(var(--spacing) * -1);
@@ -1028,6 +1037,10 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
@@ -1079,6 +1092,12 @@
   .text-green-700 {
     color: var(--color-green-700);
   }
+  .text-green-800 {
+    color: var(--color-green-800);
+  }
+  .text-red-800 {
+    color: var(--color-red-800);
+  }
   .italic {
     font-style: italic;
   }
@@ -1096,10 +1115,6 @@
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow-smooth-20 {
-    --tw-shadow: 0px 0.6px 0.8px var(--tw-shadow-color, rgba(0, 0, 0, 0.014)), 0px 1.3px 2px var(--tw-shadow-color, rgba(0, 0, 0, 0.02)), 0px 2.5px 3.8px var(--tw-shadow-color, rgba(0, 0, 0, 0.025)), 0px 4.5px 6.7px var(--tw-shadow-color, rgba(0, 0, 0, 0.03)), 0px 8.4px 12.5px var(--tw-shadow-color, rgba(0, 0, 0, 0.036)), 0px 20px 30px var(--tw-shadow-color, rgba(0, 0, 0, 0.05));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-smooth-40 {
     --tw-shadow: 0px 1.1px 1.1px var(--tw-shadow-color, rgba(0, 0, 0, 0.014)), 0px 2.7px 2.7px var(--tw-shadow-color, rgba(0, 0, 0, 0.02)), 0px 5px 5px var(--tw-shadow-color, rgba(0, 0, 0, 0.025)), 0px 8.9px 8.9px var(--tw-shadow-color, rgba(0, 0, 0, 0.03)), 0px 16.7px 16.7px var(--tw-shadow-color, rgba(0, 0, 0, 0.036)), 0px 40px 40px var(--tw-shadow-color, rgba(0, 0, 0, 0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1107,6 +1122,9 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
@@ -1148,6 +1166,16 @@
   }
   .\[--swiper-navigation-size\:calc\(0\.25vw\+1\.5rem\)\] {
     --swiper-navigation-size: calc(0.25vw + 1.5rem);
+  }
+  .\*\:my-6 {
+    :is(& > *) {
+      margin-block: calc(var(--spacing) * 6);
+    }
+  }
+  .\*\:my-8 {
+    :is(& > *) {
+      margin-block: calc(var(--spacing) * 8);
+    }
   }
   .not-print\:mt-\[1px\] {
     @media not print {
@@ -1301,6 +1329,12 @@
   .print\:pl-0 {
     @media print {
       padding-left: calc(var(--spacing) * 0);
+    }
+  }
+  .print\:text-sm {
+    @media print {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
   .print\:text-xs {
@@ -1649,6 +1683,42 @@ swiper-main .swiper-button-next.swiper-button-disabled, swiper-main .swiper-butt
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
 }
 @property --tw-leading {
   syntax: "*";
