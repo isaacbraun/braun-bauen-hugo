@@ -6,7 +6,7 @@
 
 <section class="print:hidden flex flex-row gap-3 text-gray-500">
   <button x-data="{ message: 'Copy Email' }"
-    @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com');"
+    @click="message = 'Copied!'; navigator.clipboard.writeText('isaac@braunbauen.com'); posthog.capture('email_copied');"
     @mouseleave="message = 'Copy Email'"
     class="text-current hover:text-green-700 transition-colors duration-300 ease-in-out has-tooltip"
     aria-label="Copy Email to Clipboard">
