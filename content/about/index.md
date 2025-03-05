@@ -22,8 +22,8 @@ collaborating closely with the design and **RESTful API** teams, providing facul
 information and creating a more engaging UX for prospective students.
 - Facilitated a **30%** performance increase for the homepage by developing a custom code-splitting system with **XSLT** and **PHP**,
 optimizing video implementations, and ensuring **CDN** usage for resources.
-- Managed a team of interns through the development of multiple projects, including a **Vue.js** calendar web app and **6** shared page components,
-increasing accessibility and decreasing clicks by **55%**.
+- Managed a team of interns through the development of multiple projects, including a **Vue.js** calendar web app and **6** design system components,
+decreasing clicks by **55%** and expanding the content editors' arsenal.
 - Created a more efficient system by refactoring page templates to be composable and unifying **JavaScript** libraries.
 {{% /markdown %}}
 {{< /resume-item >}}
