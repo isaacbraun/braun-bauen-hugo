@@ -1,6 +1,17 @@
 import Alpine from "js/alpinejs.min.js";
 import Swiper from "swiper";
 import { Navigation } from "swiper/modules";
+import posthog from "posthog-js";
+
+/**
+ * Init Posthog
+ */
+posthog.init("phc_lXSsXAWhuMg8goxawKh84k0FjWuH1H2qDggxPhmAnmw", {
+  api_host: "https://us.i.posthog.com",
+  person_profiles: "identified_only",
+});
+
+posthog.capture('my event', { property: 'value' })
 
 /**
  * Alpine magic function to create a swiper instance with passed element
@@ -21,17 +32,17 @@ const swiper = new Swiper(".swiper", {
   },
   on: {
     // Add 'atBeginning' class when swiper is at beginning of slides
-    reachBeginning: function () {
-      this.el.classList.add('atBeginning');
+    reachBeginning: function() {
+      this.el.classList.add("atBeginning");
     },
     // Add 'atEnd' class when swiper is at end of slides
-    reachEnd: function () {
-      this.el.classList.add('atEnd');
+    reachEnd: function() {
+      this.el.classList.add("atEnd");
     },
     // Removed positional classes when swiper is moved from either edge
-    fromEdge: function () {
-      this.el.classList.remove('atBeginning', 'atEnd');
-    }
+    fromEdge: function() {
+      this.el.classList.remove("atBeginning", "atEnd");
+    },
   },
 });
 
