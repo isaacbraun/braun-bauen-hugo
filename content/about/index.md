@@ -61,7 +61,7 @@ decreasing clicks by **55%** and expanding the content editors' arsenal.
 {{% markdown %}}
 ## Education
 ### Bachelor of Science in Computer Science
-Southern Adventist University | GPA 3.75
+Southern Adventist University | GPA 3.78
 ### Data Analytics Certificate
 Southern Adventist University
 {{% /markdown %}}
