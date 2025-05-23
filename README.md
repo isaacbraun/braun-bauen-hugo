@@ -1,5 +1,5 @@
 # Braun Bauen - Hugo
-The former Braun Bauen website built with Hugo. This site was [rewriten using Astro](https://github.com/isaacbraun/braun-bauen-site), which is live at [braunbauen.com](https://braunbauen.com).
+The former Braun Bauen website built with Hugo. This site was [rewritten using Astro](https://github.com/isaacbraun/braun-bauen-site), which is live at [braunbauen.com](https://braunbauen.com).
 
 # Usage
 All commands are declared in the `Makefile`
